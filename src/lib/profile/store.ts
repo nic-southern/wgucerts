@@ -2,6 +2,8 @@
 
 import {
   defaultProfile,
+  LEGACY_PROFILE_STORAGE_KEY,
+  migrateLegacyProfile,
   PROFILE_STORAGE_KEY,
   userProfileSchema,
   type UserProfile,
@@ -11,8 +13,14 @@ export function readProfile(): UserProfile {
   if (typeof window === "undefined") return defaultProfile;
   try {
     const raw = window.localStorage.getItem(PROFILE_STORAGE_KEY);
-    if (!raw) return defaultProfile;
-    return userProfileSchema.parse(JSON.parse(raw));
+    if (raw) return userProfileSchema.parse(JSON.parse(raw));
+
+    const legacy = window.localStorage.getItem(LEGACY_PROFILE_STORAGE_KEY);
+    if (legacy) {
+      const migrated = migrateLegacyProfile(JSON.parse(legacy));
+      if (migrated) return migrated;
+    }
+    return defaultProfile;
   } catch {
     return defaultProfile;
   }
@@ -34,5 +42,13 @@ export function updateProfile(
 }
 
 export function clearProfile(): void {
+  if (typeof window !== "undefined") {
+    window.localStorage.removeItem(LEGACY_PROFILE_STORAGE_KEY);
+  }
   writeProfile(defaultProfile);
+}
+
+/** Adds or removes `id`, leaving the rest of the list untouched. */
+export function toggleId(ids: string[], id: string): string[] {
+  return ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id];
 }

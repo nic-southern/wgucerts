@@ -521,6 +521,101 @@ a:hover {
   margin-top: 2rem;
 }
 
+.progress-panel__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.progress-panel__percent {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--accent-deep);
+}
+
+.progress {
+  height: 0.65rem;
+  margin: 0.6rem 0 0.5rem;
+  border-radius: 999px;
+  background: rgba(20, 35, 31, 0.1);
+  overflow: hidden;
+}
+
+.progress__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--accent-deep);
+  transition: width 200ms ease;
+}
+
+.progress-panel__estimate {
+  margin: 0.5rem 0 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.course-line {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: start;
+}
+
+.course-done {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.15rem;
+  accent-color: var(--accent-deep);
+  cursor: pointer;
+}
+
+.time-note {
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.time-note--empty {
+  color: var(--ink-soft);
+}
+
+.time-note__links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.5rem;
+}
+
+.time-note__links a,
+.time-note a {
+  font-size: 0.82rem;
+  color: var(--accent-deep);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* Separate one source from the next so the numbers do not read as prose. */
+.time-note__links a + a::before {
+  content: "·";
+  margin-right: 0.5rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.transfer-group + .transfer-group {
+  margin-top: 0.9rem;
+}
+
+.transfer-group h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
 @keyframes rise {
   from {
     opacity: 0;

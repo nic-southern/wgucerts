@@ -9,6 +9,7 @@
   | Institutional Catalog PDF | course tables (codes + competency units) |
   | Transferable Certifications page | providers, certificates, program eligibility |
   | Sophia College of IT chart | Sophia/Study.com course clears |
+  | Curated table + Reddit search | community clear times per course |
 - A CU (competency unit) is WGU’s semester credit-hour equivalent.
 - **Reverse clears:** each WGU course can list certs (`certCourseClears`) and Sophia/Study.com courses (`transferCourseClears`).
 - Sophia seeds come from the WGU College of IT Sophia chart; Study.com is a thinner starter pack. Always confirm on [WGU Transfer Pathways](https://partners.wgu.edu/).
@@ -44,6 +45,33 @@ match**. Treat a growing unresolved list as the signal to extend the vendor alia
 last coverage gap went unnoticed because nothing reported it. What remains unresolved is
 mostly credentials absent from the Transferable Certifications page, so there is no record
 to match them to.
+
+### Community clear times
+
+`courseTimes` answers "how long did this take other people," merged from two sources:
+
+1. **`course-time-seed.ts`** — a hand-reviewed row per source post. This is the baseline, so
+   a blocked search degrades to reviewed data rather than to nothing.
+2. **Reddit search** — `reddit-search.ts` reads the HTML search page across the WGU
+   subreddits. The JSON endpoints refuse unauthenticated clients; the HTML page is a
+   courtesy, not a supported interface, so it is cached for a week, rate-limited, and
+   abandoned on a 429. `INGEST_SKIP_REDDIT=1` turns it off.
+
+A duration is only read from phrasings we can defend (`parse-duration.ts`); anything else is
+counted as no data and printed. Four filters exist because each caught real bad data on the
+first run:
+
+- the title must claim a pass, or a duration spent failing reads as a clear time
+- "8 weeks left" is time remaining, not time spent (it gave `C683` 56 days)
+- a title naming three or more courses is a term or degree summary, not a course report (a
+  BSCSIA master list gave 159 days to every course it named)
+- a crossposted title arrives under two URLs and counted as two students
+
+Aggregation stores the **median**, not the mean: these distributions have long right tails.
+The report count travels with every estimate because most courses have one report, and
+people post when a course went quickly. Ingest re-checks each curated row against the code
+its cited post names — that check is what caught two rows whose times belonged to other
+courses.
 
 ### Fetching
 

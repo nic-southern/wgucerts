@@ -30,3 +30,21 @@ export function certificatesByProvider() {
     .filter((group) => group.certificates.length > 0)
     .sort((a, b) => a.provider.name.localeCompare(b.provider.name));
 }
+
+/** Alternate-credit courses (Sophia, Study.com) grouped by their provider. */
+export function transferCoursesByProvider() {
+  const catalog = getCatalog();
+  const clearsSomething = new Set(
+    catalog.transferCourseClears.map((c) => c.transferCourseId),
+  );
+  return catalog.transferProviders
+    .map((provider) => ({
+      provider,
+      courses: catalog.transferCourses
+        // A course we hold no mapping for would tick but clear nothing.
+        .filter((c) => c.providerId === provider.id && clearsSomething.has(c.id))
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    }))
+    .filter((group) => group.courses.length > 0)
+    .sort((a, b) => a.provider.name.localeCompare(b.provider.name));
+}

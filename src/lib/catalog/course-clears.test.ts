@@ -70,6 +70,7 @@ const catalog: Catalog = {
       confidence: "estimated",
     },
   ],
+  courseTimes: [],
   degreeRules: [],
 };
 

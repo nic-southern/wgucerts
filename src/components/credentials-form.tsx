@@ -1,12 +1,22 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Certificate, Provider } from "@/lib/catalog/schema";
+import type {
+  Certificate,
+  Provider,
+  TransferCourse,
+  TransferProvider,
+} from "@/lib/catalog/schema";
 import { useProfile } from "@/lib/profile/use-profile";
 
 type Group = {
   provider: Provider;
   certificates: Certificate[];
+};
+
+export type TransferGroup = {
+  provider: TransferProvider;
+  courses: TransferCourse[];
 };
 
 const DEGREE_OPTIONS = [
@@ -16,12 +26,19 @@ const DEGREE_OPTIONS = [
   { value: "bachelors", label: "Bachelor’s degree" },
 ] as const;
 
-export function CredentialsForm({ groups }: { groups: Group[] }) {
+export function CredentialsForm({
+  groups,
+  transferGroups,
+}: {
+  groups: Group[];
+  transferGroups: TransferGroup[];
+}) {
   const {
     profile,
     hydrated,
     setPriorDegree,
     toggleCertificate,
+    toggleCompletedTransferCourse,
     clear,
   } = useProfile();
   const [query, setQuery] = useState("");
@@ -45,6 +62,7 @@ export function CredentialsForm({ groups }: { groups: Group[] }) {
   }, [groups, query]);
 
   const selectedCount = profile.certificateIds.length;
+  const finishedCount = profile.completedTransferCourseIds.length;
 
   return (
     <div className="credentials">
@@ -69,6 +87,45 @@ export function CredentialsForm({ groups }: { groups: Group[] }) {
           ))}
         </div>
       </section>
+
+      {transferGroups.length > 0 ? (
+        <section className="panel">
+          <div className="panel__header">
+            <div>
+              <h2>Courses finished elsewhere</h2>
+              <p className="muted">
+                Tick the courses you have already passed. Each one clears the WGU
+                course it counts for.
+                {hydrated && finishedCount > 0
+                  ? ` ${finishedCount} finished.`
+                  : ""}
+              </p>
+            </div>
+          </div>
+          {transferGroups.map((group) => (
+            <div key={group.provider.id} className="transfer-group">
+              <h3>{group.provider.name}</h3>
+              <ul className="cert-list">
+                {group.courses.map((course) => (
+                  <li key={course.id}>
+                    <label className="cert-row">
+                      <input
+                        type="checkbox"
+                        disabled={!hydrated}
+                        checked={profile.completedTransferCourseIds.includes(
+                          course.id,
+                        )}
+                        onChange={() => toggleCompletedTransferCourse(course.id)}
+                      />
+                      <span>{course.name}</span>
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      ) : null}
 
       <section className="panel">
         <div className="panel__header">

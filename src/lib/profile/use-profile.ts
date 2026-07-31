@@ -2,7 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import { defaultProfile, type UserProfile } from "./schema";
-import { clearProfile, readProfile, updateProfile } from "./store";
+import { clearProfile, readProfile, toggleId, updateProfile } from "./store";
 
 function subscribe(onStoreChange: () => void) {
   window.addEventListener("storage", onStoreChange);
@@ -44,15 +44,25 @@ export function useProfile() {
       updateProfile((p) => ({ ...p, priorDegree }));
     },
     toggleCertificate(certificateId: string) {
-      updateProfile((p) => {
-        const has = p.certificateIds.includes(certificateId);
-        return {
-          ...p,
-          certificateIds: has
-            ? p.certificateIds.filter((id) => id !== certificateId)
-            : [...p.certificateIds, certificateId],
-        };
-      });
+      updateProfile((p) => ({
+        ...p,
+        certificateIds: toggleId(p.certificateIds, certificateId),
+      }));
+    },
+    toggleCompletedCourse(courseId: string) {
+      updateProfile((p) => ({
+        ...p,
+        completedCourseIds: toggleId(p.completedCourseIds, courseId),
+      }));
+    },
+    toggleCompletedTransferCourse(transferCourseId: string) {
+      updateProfile((p) => ({
+        ...p,
+        completedTransferCourseIds: toggleId(
+          p.completedTransferCourseIds,
+          transferCourseId,
+        ),
+      }));
     },
     clear() {
       clearProfile();

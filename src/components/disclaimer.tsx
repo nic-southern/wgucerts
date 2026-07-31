@@ -5,7 +5,9 @@ export function Disclaimer({ compact = false }: { compact?: boolean }) {
         Unofficial planning aid based on publicly listed WGU transfer information.
         This is not an official evaluation. Speak with a WGU enrollment counselor
         for a binding transfer review. Many IT certifications must be earned within
-        the last five years.
+        the last five years. Course times are individual accounts from student
+        posts, each one linked to its source — not official estimates, and not a
+        typical pace.
       </p>
     </aside>
   );

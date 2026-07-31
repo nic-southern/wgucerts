@@ -3,6 +3,7 @@ import type {
   Certificate,
   Course,
   CourseCategory,
+  CourseTime,
   Provider,
 } from "@/lib/catalog/schema";
 import type { UserProfile } from "@/lib/profile/schema";
@@ -16,12 +17,24 @@ export type ClearReason =
       providerName: string;
       source: string;
       confidence: "published" | "estimated";
-    };
+    }
+  | {
+      type: "transfer";
+      transferCourseId: string;
+      transferCourseName: string;
+      providerName: string;
+      source: string;
+      confidence: "published" | "estimated";
+    }
+  /** Marked done by hand, which needs no evidence beyond the planner saying so. */
+  | { type: "self" };
 
 export type CourseMatch = {
   course: Course;
   cleared: boolean;
   reasons: ClearReason[];
+  /** Community-reported clear time, when anyone has reported one. */
+  time: CourseTime | null;
 };
 
 export type ApplicableCertificate = {
@@ -38,6 +51,12 @@ export type MatchResult = {
   clearedCus: number;
   remainingCus: number;
   totalCus: number;
+  /** 0–100, rounded. Measured in competency units, not course count. */
+  percentComplete: number;
+  /** Days of coursework left, summing medians for courses that have one. */
+  remainingDays: number;
+  /** Remaining courses nobody has reported a time for, so the sum is a floor. */
+  remainingWithoutTime: number;
   applicableCertificates: ApplicableCertificate[];
   ineligibleCertificates: ApplicableCertificate[];
   degreeNotes: string | null;
@@ -58,6 +77,9 @@ export function matchProgram(
       clearedCus: 0,
       remainingCus: 0,
       totalCus: 0,
+      percentComplete: 0,
+      remainingDays: 0,
+      remainingWithoutTime: 0,
       applicableCertificates: [],
       ineligibleCertificates: [],
       degreeNotes: null,
@@ -148,12 +170,53 @@ export function matchProgram(
     }
   }
 
+  // Finishing a Sophia or Study.com course clears whatever it maps to.
+  const transferProviderById = new Map(
+    catalog.transferProviders.map((p) => [p.id, p]),
+  );
+  const transferCourseById = new Map(
+    catalog.transferCourses.map((c) => [c.id, c]),
+  );
+
+  for (const transferCourseId of profile.completedTransferCourseIds) {
+    const transferCourse = transferCourseById.get(transferCourseId);
+    if (!transferCourse) continue;
+    const provider = transferProviderById.get(transferCourse.providerId);
+    if (!provider) continue;
+
+    for (const clear of catalog.transferCourseClears) {
+      if (clear.transferCourseId !== transferCourseId) continue;
+      const course = courses.find((c) => c.id === clear.courseId);
+      if (!course) continue;
+
+      const reasons = clearedByCourse.get(course.id) ?? [];
+      reasons.push({
+        type: "transfer",
+        transferCourseId,
+        transferCourseName: transferCourse.name,
+        providerName: provider.name,
+        source: clear.source,
+        confidence: clear.confidence,
+      });
+      clearedByCourse.set(course.id, reasons);
+    }
+  }
+
+  const markedDone = new Set(profile.completedCourseIds);
+  const timeByCourseId = new Map(
+    catalog.courseTimes.map((t) => [t.courseId, t]),
+  );
+
   const courseMatches: CourseMatch[] = courses.map((course) => {
-    const reasons = clearedByCourse.get(course.id) ?? [];
+    const reasons = [...(clearedByCourse.get(course.id) ?? [])];
+    if (markedDone.has(course.id)) {
+      reasons.push({ type: "self" });
+    }
     return {
       course,
       cleared: reasons.length > 0,
       reasons,
+      time: timeByCourseId.get(course.id) ?? null,
     };
   });
 
@@ -166,14 +229,26 @@ export function matchProgram(
     courseMatches.reduce((sum, c) => sum + (c.course.cu ?? 0), 0);
   const remainingCus = Math.max(0, totalCus - clearedCus);
 
+  const remaining = courseMatches.filter((c) => !c.cleared);
+  const remainingDays = remaining.reduce(
+    (sum, c) => sum + (c.time?.medianDays ?? 0),
+    0,
+  );
+
   return {
     programId,
     courses: courseMatches,
     clearedCount,
-    remainingCount: courseMatches.length - clearedCount,
+    remainingCount: remaining.length,
     clearedCus,
     remainingCus,
     totalCus,
+    percentComplete:
+      totalCus > 0
+        ? Math.min(100, Math.round((clearedCus / totalCus) * 100))
+        : 0,
+    remainingDays,
+    remainingWithoutTime: remaining.filter((c) => !c.time?.medianDays).length,
     applicableCertificates,
     ineligibleCertificates,
     degreeNotes,
