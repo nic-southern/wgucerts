@@ -17,6 +17,10 @@ export type CatalogProgramCourses = {
  * Course tables carry a title rather than a program code, and the two Software
  * Engineering tracks share their title word for word. A table is therefore
  * identified by its heading plus, where needed, a course only one track lists.
+ *
+ * Headings match the whole line. A prefix match would let "Information
+ * Technology" claim the "Information Technology Management" table, which is a
+ * different school's program.
  */
 const PROGRAM_TABLE_MATCHERS: {
   code: string;
@@ -26,48 +30,41 @@ const PROGRAM_TABLE_MATCHERS: {
   {
     code: "BSCNEAWS",
     heading:
-      /^Bachelor of Science, Cloud and Network Engineering - Amazon Web Services\b/i,
+      /^Bachelor of Science, Cloud and Network Engineering - Amazon Web Services$/i,
   },
   {
     code: "BSCNEAZR",
     heading:
-      /^Bachelor of Science, Cloud and Network Engineering - Microsoft Azure\b/i,
+      /^Bachelor of Science, Cloud and Network Engineering - Microsoft Azure$/i,
   },
   {
     code: "BSCNECIS",
-    heading: /^Bachelor of Science, Cloud and Network Engineering - Cisco\b/i,
+    heading: /^Bachelor of Science, Cloud and Network Engineering - Cisco$/i,
   },
   {
     code: "BSCNE",
-    heading: /^Bachelor of Science, Cloud and Network Engineering\b/i,
+    heading: /^Bachelor of Science, Cloud and Network Engineering$/i,
   },
   {
     code: "BSCSIA",
-    heading: /^Bachelor of Science, Cybersecurity and Information Assurance\b/i,
+    heading: /^Bachelor of Science, Cybersecurity and Information Assurance$/i,
   },
-  { code: "BSAIE", heading: /^Bachelor of Science, AI Engineering\b/i },
-  {
-    code: "BSCS",
-    heading: /^Bachelor of Science, Computer Science\b(?!\s*\()/i,
-  },
-  { code: "BSDA", heading: /^Bachelor of Science, Data Analytics\b/i },
+  { code: "BSAIE", heading: /^Bachelor of Science, AI Engineering$/i },
+  { code: "BSCS", heading: /^Bachelor of Science, Computer Science$/i },
+  { code: "BSDA", heading: /^Bachelor of Science, Data Analytics$/i },
   {
     code: "MSITUG",
-    heading:
-      /^Bachelor of Science, Information Technology\s*\(BSIT to MSIT\)/i,
+    heading: /^Bachelor of Science, Information Technology \(BSIT to MSIT\)$/i,
   },
-  {
-    code: "BSIT",
-    heading: /^Bachelor of Science, Information Technology\b(?!\s*\()/i,
-  },
+  { code: "BSIT", heading: /^Bachelor of Science, Information Technology$/i },
   {
     code: "BSSWE_C",
-    heading: /^Bachelor of Science, Software Engineering\b(?!\s*\()/i,
+    heading: /^Bachelor of Science, Software Engineering$/i,
     requires: /Software I\s*[–\-]\s*C#/i,
   },
   {
     code: "BSSWE",
-    heading: /^Bachelor of Science, Software Engineering\b(?!\s*\()/i,
+    heading: /^Bachelor of Science, Software Engineering$/i,
     requires: /Java Fundamentals/i,
   },
 ];
@@ -75,9 +72,12 @@ const PROGRAM_TABLE_MATCHERS: {
 /**
  * Course row: CCN CODE Name CUs Term
  * Example: ITEC 2012 E004 Introduction to IT 3 1
+ *
+ * The name class must admit `#` and dashes of every width, or rows such as
+ * "Software I – C#" fail to match and drop out of the table silently.
  */
 const COURSE_ROW_RE =
-  /\b([A-Z]{2,6})\s+(\d{4})\s+([A-Z]\d{3,4})\s+([A-Z][A-Za-z0-9:'’()\/,&+.\- ]{2,90}?)\s+(\d{1,2})\s+(\d{1,2})\b/g;
+  /\b([A-Z]{2,6})\s+(\d{4})\s+([A-Z]\d{3,4})\s+([A-Z][A-Za-z0-9:'’()\/,&+.#–—\- ]{2,90}?)\s+(\d{1,2})\s+(\d{1,2})\b/g;
 
 const GEN_ED_NAME =
   /composition|communication|critical thinking|american politics|ethics in technology|applied algebra|applied probability|natural science|health, fitness|us history|integrated physical|systems thinking|influential communication|discrete math/i;

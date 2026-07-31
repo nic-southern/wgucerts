@@ -1,6 +1,7 @@
 # Docs
 
 - [Product spec — WGU Certs Viewer v1](product-specs/wgu-certs-viewer-v1.md)
+- [Product spec — Progress and clear times v2](product-specs/progress-and-clear-times-v2.md)
 - [Architecture](../ARCHITECTURE.md)
 - [Agent map](../AGENTS.md)
 - [Ingest notes](references/ingest-notes.md)

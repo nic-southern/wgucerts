@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetchedAt": "2026-07-31T00:07:31.092Z",
+    "fetchedAt": "2026-07-31T12:14:52.214Z",
     "sources": [
       {
         "name": "WGU General Transfer Guidelines",
@@ -753,6 +753,7 @@
         "course:d315",
         "course:d197",
         "course:e079",
+        "course:e080",
         "course:d270",
         "course:e071",
         "course:e081",
@@ -763,10 +764,12 @@
         "course:d495",
         "course:d459",
         "course:e083",
+        "course:e084",
         "course:d268",
         "course:e068",
         "course:c952",
         "course:d430",
+        "course:e085",
         "course:d499",
         "course:e086",
         "course:e087",
@@ -1118,46 +1121,43 @@
       "code": "BSIT",
       "degreeLevel": "bachelors",
       "url": "https://www.wgu.edu/online-it-degrees.html",
-      "totalCus": 120,
+      "totalCus": 110,
       "courseIds": [
-        "course:c715",
-        "course:d072",
-        "course:d075",
-        "course:c168",
-        "course:c483",
-        "course:d078",
-        "course:c455",
-        "course:c720",
-        "course:c722",
-        "course:d196",
-        "course:d082",
-        "course:c121",
-        "course:c724",
-        "course:c464",
-        "course:c456",
-        "course:c165",
-        "course:c273",
+        "course:e004",
+        "course:e005",
+        "course:d246",
+        "course:c458",
+        "course:d773",
+        "course:d265",
+        "course:d336",
+        "course:d270",
+        "course:d459",
+        "course:d324",
         "course:c955",
-        "course:d089",
-        "course:c179",
-        "course:d100",
-        "course:d079",
-        "course:d076",
-        "course:c172",
+        "course:d685",
+        "course:d281",
+        "course:d316",
+        "course:c963",
+        "course:e006",
+        "course:d388",
+        "course:e007",
+        "course:d317",
+        "course:e008",
+        "course:e009",
+        "course:d315",
         "course:c957",
-        "course:c100",
-        "course:d077",
-        "course:d080",
-        "course:c721",
-        "course:c232",
-        "course:d081",
-        "course:d253",
-        "course:c175",
-        "course:c234",
-        "course:d361",
-        "course:c236",
-        "course:c233",
-        "course:c723"
+        "course:d318",
+        "course:d426",
+        "course:d325",
+        "course:d339",
+        "course:c683",
+        "course:d198",
+        "course:d329",
+        "course:e010",
+        "course:d822",
+        "course:d427",
+        "course:d522",
+        "course:d282"
       ]
     },
     {
@@ -1285,9 +1285,11 @@
         "course:d279",
         "course:d479",
         "course:c458",
+        "course:c968",
         "course:d282",
         "course:d386",
         "course:d324",
+        "course:c969",
         "course:d336",
         "course:d199",
         "course:d270",
@@ -1296,6 +1298,7 @@
         "course:d480",
         "course:c963",
         "course:d284",
+        "course:c971",
         "course:d424"
       ]
     }
@@ -1346,6 +1349,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -1411,6 +1415,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -1431,6 +1436,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -1464,6 +1470,16 @@
       ]
     },
     {
+      "id": "course:e080",
+      "code": "E080",
+      "name": "AI Engineering with C#",
+      "cu": 3,
+      "category": "core",
+      "programIds": [
+        "program:bs-ai-engineering"
+      ]
+    },
+    {
       "id": "course:d270",
       "code": "D270",
       "name": "Composition: Successful Self – Expression",
@@ -1477,6 +1493,7 @@
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -1572,6 +1589,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-computer-science",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -1579,6 +1597,16 @@
       "id": "course:e083",
       "code": "E083",
       "name": "Mathematics of AI",
+      "cu": 3,
+      "category": "core",
+      "programIds": [
+        "program:bs-ai-engineering"
+      ]
+    },
+    {
+      "id": "course:e084",
+      "code": "E084",
+      "name": "Advanced C#",
       "cu": 3,
       "category": "core",
       "programIds": [
@@ -1628,6 +1656,16 @@
       "programIds": [
         "program:bs-ai-engineering",
         "program:bs-computer-science"
+      ]
+    },
+    {
+      "id": "course:e085",
+      "code": "E085",
+      "name": "C# .NET Back End Development",
+      "cu": 3,
+      "category": "core",
+      "programIds": [
+        "program:bs-ai-engineering"
       ]
     },
     {
@@ -1683,6 +1721,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -1773,6 +1812,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -1788,6 +1828,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -1802,6 +1843,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
       ]
@@ -1819,6 +1861,7 @@
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -1834,6 +1877,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -1866,6 +1910,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -1906,6 +1951,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -1921,6 +1967,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -1957,6 +2004,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -2008,6 +2056,7 @@
       "programIds": [
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-cisco",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -2034,8 +2083,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-cisco",
-        "program:bs-cloud-and-network-engineering-microsoft-azure",
-        "program:bs-information-technology"
+        "program:bs-cloud-and-network-engineering-microsoft-azure"
       ]
     },
     {
@@ -2051,6 +2099,7 @@
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -2113,6 +2162,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -2151,6 +2201,7 @@
       "programIds": [
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -2309,6 +2360,7 @@
       "programIds": [
         "program:bs-computer-science",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -2323,6 +2375,7 @@
       "programIds": [
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -2356,6 +2409,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
@@ -2498,6 +2552,7 @@
       "programIds": [
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -2551,6 +2606,7 @@
       "programIds": [
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
       ]
@@ -2687,6 +2743,7 @@
       "category": "core",
       "programIds": [
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -2787,8 +2844,7 @@
       "cu": 3,
       "category": "core",
       "programIds": [
-        "program:bs-data-analytics",
-        "program:bs-information-technology"
+        "program:bs-data-analytics"
       ]
     },
     {
@@ -2842,352 +2898,13 @@
       ]
     },
     {
-      "id": "course:c715",
-      "code": "C715",
-      "name": "Organizational Behavior",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d072",
-      "code": "D072",
-      "name": "Fundamentals for Success in Business",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d075",
-      "code": "D075",
-      "name": "Information Technology Management Essentials",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c168",
-      "code": "C168",
-      "name": "Critical Thinking and Logic",
-      "cu": 3,
-      "category": "genEd",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c483",
-      "code": "C483",
-      "name": "Principles of Management",
-      "cu": 4,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d078",
-      "code": "D078",
-      "name": "Business Environment Applications I: Business Structures and Legal Environment",
-      "cu": 2,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c455",
-      "code": "C455",
-      "name": "English Composition I",
-      "cu": 3,
-      "category": "genEd",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c720",
-      "code": "C720",
-      "name": "Operations and Supply Chain Management",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c722",
-      "code": "C722",
-      "name": "Project Management",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d196",
-      "code": "D196",
-      "name": "Principles of Financial and Managerial Accounting",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d082",
-      "code": "D082",
-      "name": "Emotional and Cultural Intelligence",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c121",
-      "code": "C121",
-      "name": "Survey of United States History",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c724",
-      "code": "C724",
-      "name": "Information Systems Management",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c464",
-      "code": "C464",
-      "name": "Introduction to Communication",
-      "cu": 3,
-      "category": "genEd",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c456",
-      "code": "C456",
-      "name": "English Composition II",
-      "cu": 3,
-      "category": "genEd",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c273",
-      "code": "C273",
-      "name": "Introduction to Sociology",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d089",
-      "code": "D089",
-      "name": "Principles of Economics",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c179",
-      "code": "C179",
-      "name": "Business of IT – Applications",
-      "cu": 4,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d100",
-      "code": "D100",
-      "name": "Introduction to Spreadsheets",
-      "cu": 1,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d079",
-      "code": "D079",
-      "name": "Business Environment Applications II: Process, Logistics, and Operations",
-      "cu": 2,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d076",
-      "code": "D076",
-      "name": "Finance Skills for Managers",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c172",
-      "code": "C172",
-      "name": "Network and Security – Foundations",
-      "cu": 3,
-      "category": "foundations",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c100",
-      "code": "C100",
-      "name": "Introduction to Humanities",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d077",
-      "code": "D077",
-      "name": "Concepts in Marketing, Sales, and Customer Contact",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d080",
-      "code": "D080",
-      "name": "Managing in a Global Business Environment",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c232",
-      "code": "C232",
-      "name": "Introduction to Human Resource Management",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d081",
-      "code": "D081",
-      "name": "Innovative and Strategic Thinking",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d253",
-      "code": "D253",
-      "name": "Values – Based Leadership",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c175",
-      "code": "C175",
-      "name": "Data Management – Foundations",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c234",
-      "code": "C234",
-      "name": "Workforce Planning: Recruitment and Selection",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:d361",
-      "code": "D361",
-      "name": "Business Simulation",
-      "cu": 4,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c236",
-      "code": "C236",
-      "name": "Compensation and Benefits",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c233",
-      "code": "C233",
-      "name": "Employment Law",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
-      "id": "course:c723",
-      "code": "C723",
-      "name": "Quantitative Analysis For Business",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology"
-      ]
-    },
-    {
       "id": "course:e005",
       "code": "E005",
       "name": "Business Productivity Software",
       "cu": 3,
       "category": "core",
       "programIds": [
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -3198,16 +2915,7 @@
       "cu": 3,
       "category": "core",
       "programIds": [
-        "program:bs-information-technology-bsit-to-msit"
-      ]
-    },
-    {
-      "id": "course:e015",
-      "code": "E015",
-      "name": "Project Management",
-      "cu": 4,
-      "category": "core",
-      "programIds": [
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -3218,6 +2926,7 @@
       "cu": 2,
       "category": "core",
       "programIds": [
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -3226,6 +2935,60 @@
       "code": "E007",
       "name": "Agile Methodology",
       "cu": 3,
+      "category": "core",
+      "programIds": [
+        "program:bs-information-technology",
+        "program:bs-information-technology-bsit-to-msit"
+      ]
+    },
+    {
+      "id": "course:e008",
+      "code": "E008",
+      "name": "Technology Management",
+      "cu": 3,
+      "category": "core",
+      "programIds": [
+        "program:bs-information-technology"
+      ]
+    },
+    {
+      "id": "course:e009",
+      "code": "E009",
+      "name": "Web Design Fundamentals",
+      "cu": 3,
+      "category": "core",
+      "programIds": [
+        "program:bs-information-technology",
+        "program:bs-information-technology-bsit-to-msit"
+      ]
+    },
+    {
+      "id": "course:d198",
+      "code": "D198",
+      "name": "Global Arts and Humanities",
+      "cu": 3,
+      "category": "core",
+      "programIds": [
+        "program:bs-information-technology",
+        "program:bs-information-technology-bsit-to-msit"
+      ]
+    },
+    {
+      "id": "course:d822",
+      "code": "D822",
+      "name": "Technology Governance",
+      "cu": 3,
+      "category": "core",
+      "programIds": [
+        "program:bs-information-technology",
+        "program:bs-information-technology-bsit-to-msit"
+      ]
+    },
+    {
+      "id": "course:e015",
+      "code": "E015",
+      "name": "Project Management",
+      "cu": 4,
       "category": "core",
       "programIds": [
         "program:bs-information-technology-bsit-to-msit"
@@ -3242,41 +3005,11 @@
       ]
     },
     {
-      "id": "course:e009",
-      "code": "E009",
-      "name": "Web Design Fundamentals",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology-bsit-to-msit"
-      ]
-    },
-    {
       "id": "course:e011",
       "code": "E011",
       "name": "Technical Communication",
       "cu": 3,
       "category": "genEd",
-      "programIds": [
-        "program:bs-information-technology-bsit-to-msit"
-      ]
-    },
-    {
-      "id": "course:d198",
-      "code": "D198",
-      "name": "Global Arts and Humanities",
-      "cu": 3,
-      "category": "core",
-      "programIds": [
-        "program:bs-information-technology-bsit-to-msit"
-      ]
-    },
-    {
-      "id": "course:d822",
-      "code": "D822",
-      "name": "Technology Governance",
-      "cu": 3,
-      "category": "core",
       "programIds": [
         "program:bs-information-technology-bsit-to-msit"
       ]
@@ -3343,6 +3076,36 @@
       "category": "core",
       "programIds": [
         "program:bs-software-engineering",
+        "program:bs-software-engineering-c-track"
+      ]
+    },
+    {
+      "id": "course:c968",
+      "code": "C968",
+      "name": "Software I – C#",
+      "cu": 6,
+      "category": "core",
+      "programIds": [
+        "program:bs-software-engineering-c-track"
+      ]
+    },
+    {
+      "id": "course:c969",
+      "code": "C969",
+      "name": "Software II – Advanced C#",
+      "cu": 6,
+      "category": "core",
+      "programIds": [
+        "program:bs-software-engineering-c-track"
+      ]
+    },
+    {
+      "id": "course:c971",
+      "code": "C971",
+      "name": "Mobile Application Development Using C#",
+      "cu": 3,
+      "category": "core",
+      "programIds": [
         "program:bs-software-engineering-c-track"
       ]
     }
@@ -5452,6 +5215,33 @@
       ]
     },
     {
+      "certificateId": "cert:oracle:oracle-certified-associate-java-se-8-programmer-exam-1z0-808",
+      "courseId": "course:c968",
+      "source": "WGU general transfer guidelines",
+      "confidence": "published",
+      "programIds": [
+        "program:bs-software-engineering-c-track"
+      ]
+    },
+    {
+      "certificateId": "cert:oracle:oracle-certified-professional-java-se-8-programmer",
+      "courseId": "course:c968",
+      "source": "WGU general transfer guidelines",
+      "confidence": "published",
+      "programIds": [
+        "program:bs-software-engineering-c-track"
+      ]
+    },
+    {
+      "certificateId": "cert:oracle:oracle-database-pl-sql-developer-certified-associate-1z0-071",
+      "courseId": "course:c968",
+      "source": "WGU general transfer guidelines",
+      "confidence": "published",
+      "programIds": [
+        "program:bs-software-engineering-c-track"
+      ]
+    },
+    {
       "certificateId": "cert:ciw:ciw-advanced-html5-and-css3-specialist",
       "courseId": "course:d276",
       "source": "WGU general transfer guidelines",
@@ -5509,6 +5299,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5524,6 +5315,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5539,6 +5331,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5554,6 +5347,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5569,6 +5363,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5584,6 +5379,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5599,6 +5395,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5614,6 +5411,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5629,6 +5427,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5644,6 +5443,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5659,6 +5459,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5674,6 +5475,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5689,6 +5491,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -5700,6 +5503,7 @@
       "programIds": [
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5784,6 +5588,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5803,6 +5608,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5822,6 +5628,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5841,6 +5648,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5860,6 +5668,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5879,6 +5688,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5898,6 +5708,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5917,6 +5728,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5936,6 +5748,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5955,6 +5768,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5974,6 +5788,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -5993,6 +5808,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6012,6 +5828,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6031,6 +5848,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6050,6 +5868,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6069,6 +5888,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6088,6 +5908,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6107,6 +5928,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6126,6 +5948,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6145,6 +5968,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6164,6 +5988,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -6180,6 +6005,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6194,6 +6020,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6208,6 +6035,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6222,6 +6050,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6233,6 +6062,7 @@
       "programIds": [
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-cisco",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6284,6 +6114,7 @@
       "programIds": [
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
       ]
@@ -6296,6 +6127,7 @@
       "programIds": [
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
       ]
@@ -6308,6 +6140,7 @@
       "programIds": [
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track"
       ]
@@ -6322,6 +6155,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6335,6 +6169,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6348,6 +6183,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6361,6 +6197,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6374,6 +6211,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6387,6 +6225,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6400,6 +6239,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6413,6 +6253,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6426,6 +6267,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6439,6 +6281,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6452,6 +6295,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6465,6 +6309,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6489,6 +6334,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6502,6 +6348,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6515,6 +6362,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6528,6 +6376,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6541,6 +6390,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6554,6 +6404,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6567,6 +6418,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6580,6 +6432,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6593,6 +6446,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6606,6 +6460,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6619,6 +6474,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6632,6 +6488,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6645,6 +6502,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6658,6 +6516,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6671,6 +6530,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6684,6 +6544,7 @@
         "program:bs-cloud-and-network-engineering",
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -6777,6 +6638,7 @@
         "program:bs-cloud-and-network-engineering-cisco",
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -7313,6 +7175,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -7332,6 +7195,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -7351,6 +7215,7 @@
         "program:bs-computer-science",
         "program:bs-cybersecurity-and-information-assurance",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -7364,6 +7229,7 @@
       "programIds": [
         "program:bs-computer-science",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -7377,6 +7243,7 @@
       "programIds": [
         "program:bs-computer-science",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -7390,6 +7257,7 @@
       "programIds": [
         "program:bs-computer-science",
         "program:bs-data-analytics",
+        "program:bs-information-technology",
         "program:bs-software-engineering",
         "program:bs-software-engineering-c-track",
         "program:bs-information-technology-bsit-to-msit"
@@ -7968,6 +7836,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-cloud-and-network-engineering-cisco",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -7981,6 +7850,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-cloud-and-network-engineering-cisco",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -7990,6 +7860,7 @@
       "source": "WGU general transfer guidelines",
       "confidence": "published",
       "programIds": [
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -7999,6 +7870,7 @@
       "source": "WGU general transfer guidelines",
       "confidence": "published",
       "programIds": [
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -8008,6 +7880,7 @@
       "source": "WGU general transfer guidelines",
       "confidence": "published",
       "programIds": [
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -8111,6 +7984,7 @@
         "program:bs-cloud-and-network-engineering-amazon-web-services",
         "program:bs-cloud-and-network-engineering-microsoft-azure",
         "program:bs-cloud-and-network-engineering-cisco",
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -8141,12 +8015,14 @@
     {
       "courseId": "course:e005",
       "programIds": [
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
     {
       "courseId": "course:e006",
       "programIds": [
+        "program:bs-information-technology",
         "program:bs-information-technology-bsit-to-msit"
       ]
     },
@@ -8445,12 +8321,6 @@
       "confidence": "published"
     },
     {
-      "transferCourseId": "transfer:sophia:intro-databases",
-      "courseId": "course:c175",
-      "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
-      "confidence": "published"
-    },
-    {
       "transferCourseId": "transfer:sophia:intro-web",
       "courseId": "course:d276",
       "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
@@ -8475,32 +8345,14 @@
       "confidence": "published"
     },
     {
-      "transferCourseId": "transfer:sophia:business-comm",
-      "courseId": "course:c464",
-      "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
-      "confidence": "published"
-    },
-    {
       "transferCourseId": "transfer:sophia:public-speaking",
       "courseId": "course:d268",
       "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
       "confidence": "published"
     },
     {
-      "transferCourseId": "transfer:sophia:public-speaking",
-      "courseId": "course:c464",
-      "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
-      "confidence": "published"
-    },
-    {
       "transferCourseId": "transfer:sophia:workplace-comm",
       "courseId": "course:d268",
-      "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
-      "confidence": "published"
-    },
-    {
-      "transferCourseId": "transfer:sophia:workplace-comm",
-      "courseId": "course:c464",
       "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
       "confidence": "published"
     },
@@ -8511,32 +8363,14 @@
       "confidence": "published"
     },
     {
-      "transferCourseId": "transfer:sophia:critical-thinking",
-      "courseId": "course:c168",
-      "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
-      "confidence": "published"
-    },
-    {
       "transferCourseId": "transfer:sophia:english-comp-i",
       "courseId": "course:d270",
       "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
       "confidence": "published"
     },
     {
-      "transferCourseId": "transfer:sophia:english-comp-i",
-      "courseId": "course:c455",
-      "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
-      "confidence": "published"
-    },
-    {
       "transferCourseId": "transfer:sophia:english-comp-ii",
       "courseId": "course:d270",
-      "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
-      "confidence": "published"
-    },
-    {
-      "transferCourseId": "transfer:sophia:english-comp-ii",
-      "courseId": "course:c456",
       "source": "Sophia WGU College of IT transfer chart (confirm on WGU Transfer Pathways)",
       "confidence": "published"
     },
@@ -8621,18 +8455,6 @@
     {
       "transferCourseId": "transfer:study-com:english-comp",
       "courseId": "course:d270",
-      "source": "Common Study.com → WGU mapping (confirm on partners.wgu.edu)",
-      "confidence": "estimated"
-    },
-    {
-      "transferCourseId": "transfer:study-com:english-comp",
-      "courseId": "course:c455",
-      "source": "Common Study.com → WGU mapping (confirm on partners.wgu.edu)",
-      "confidence": "estimated"
-    },
-    {
-      "transferCourseId": "transfer:study-com:english-comp",
-      "courseId": "course:c456",
       "source": "Common Study.com → WGU mapping (confirm on partners.wgu.edu)",
       "confidence": "estimated"
     },
