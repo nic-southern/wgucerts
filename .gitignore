@@ -20,6 +20,9 @@
 # extracted PDF text cache (catalog.json is the committed source of truth)
 /data/catalog/*.txt
 
+# fetched pages kept only to keep repeat ingest runs cheap
+/data/cache
+
 # production
 /build
 

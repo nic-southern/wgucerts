@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetchedAt": "2026-07-31T12:14:52.214Z",
+    "fetchedAt": "2026-07-31T13:55:10.517Z",
     "sources": [
       {
         "name": "WGU General Transfer Guidelines",
@@ -8487,6 +8487,1984 @@
       "courseId": "course:d324",
       "source": "Common Study.com → WGU mapping (confirm on partners.wgu.edu)",
       "confidence": "estimated"
+    }
+  ],
+  "courseTimes": [
+    {
+      "courseId": "course:c165",
+      "reportCount": 4,
+      "medianDays": 6,
+      "lowDays": 1,
+      "highDays": 10,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1rawn38/passed_c165_integrated_physical_sciences_high/",
+          "title": "PASSED C165 Integrated Physical Sciences- High Exemplary in 10 days!!!!",
+          "days": 10
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1o6vbd1/passed_c165_in_about_a_week/",
+          "title": "Passed C165 in about a week",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1plx7qe/done_with_c165_integrated_physical_sciences_in_4/",
+          "title": "DONE WITH C165 Integrated Physical Sciences IN 4 DAYS!!! (P.S. its super easy)",
+          "days": 4
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/sk53so/complete_c165_integrated_physical_sciences_in_4/",
+          "title": "Complete C165 Integrated physical Sciences in 4 hours or less",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:c458",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1iz3gv0/health_fitness_and_wellness_c458_passed_tips_guide/",
+          "title": "Health fitness and wellness c458 passed tips guide",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:c683",
+      "reportCount": 2,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1apfm5r/i_passed_c683_in_a_day_super_easy_class_if_you/",
+          "title": "I passed C683 in a day, super easy class if you don't overthink it but also pretty fun if you let it be.",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1duru6q/c683_passed_in_4_hours/",
+          "title": "C683 passed in 4 hours.",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:c721",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1rz8ali/change_management_c721_passed_tips_guide/",
+          "title": "Change management c721 passed tips guide",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:c845",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1mst8qv/information_systems_security_c845_passed/",
+          "title": "Information systems security c845 passed",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:c867",
+      "reportCount": 2,
+      "medianDays": 8,
+      "lowDays": 7,
+      "highDays": 8,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1h4lkn6/passed_c867_in_8_days/",
+          "title": "Passed C867 in 8 days!",
+          "days": 8
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1svjjyn/passed_pa_c867_scripting_and_programming/",
+          "title": "Passed PA C867 Scripting and Programming Applications in a Week",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:c949",
+      "reportCount": 2,
+      "medianDays": 6,
+      "lowDays": 1,
+      "highDays": 10,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1ggr9i9/c949_data_structures_and_algorithms_passed/",
+          "title": "C949 data structures and algorithms passed",
+          "days": 10
+        },
+        {
+          "url": "https://www.reddit.com/r/wgu_devs/comments/1pc4fe1/c949_passed_in_1_day/",
+          "title": "C949 Passed in 1 day",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:c950",
+      "reportCount": 2,
+      "medianDays": 5,
+      "lowDays": 4,
+      "highDays": 6,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1bdf53t/c950_data_structures_and_algorithms_ii_finished/",
+          "title": "C950 - Data Structures and Algorithms II finished in 6 days with no python experience",
+          "days": 6
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/136satg/data_structures_and_algorithms_ii_c950_passed_in/",
+          "title": "Data Structures and Algorithms II - C950 PASSED in 4 days",
+          "days": 4
+        }
+      ]
+    },
+    {
+      "courseId": "course:c952",
+      "reportCount": 3,
+      "medianDays": 2,
+      "lowDays": 1,
+      "highDays": 10,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1h4g4bn/c952_computer_architecture_passed_in_10_days/",
+          "title": "C952 computer architecture passed in 10 days",
+          "days": 10
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1is3ca7/c952_computer_architecture_passed_40_hours_of/",
+          "title": "C952 Computer Architecture - Passed ~40 hours of studying",
+          "days": 2
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1r53sa1/c952_computer_architecture_completed_in_8_hours/",
+          "title": "C952 Computer Architecture completed in 8 hours",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:c955",
+      "reportCount": 2,
+      "medianDays": 14,
+      "lowDays": 7,
+      "highDays": 20,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1uiet0a/it_took_me_20_days_c955/",
+          "title": "It took me 20 Days C955",
+          "days": 20
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1gz1jlz/7_days_to_pass_c955_stats_and_probability_fire_me/",
+          "title": "7 days to pass c955 stats and probability fire me",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:c957",
+      "reportCount": 3,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 3,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1pwg1og/passed_applied_algebra_c957/",
+          "title": "Passed applied algebra c957",
+          "days": 3
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1lt2hyl/applied_algebra_c957_tips_passed_in_1_day/",
+          "title": "Applied Algebra C957 | Tips! (Passed in 1 day)",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1m7m75g/c957_applied_algebra_passed_after_1_day/",
+          "title": "C957 - Applied Algebra passed after 1 day",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:c958",
+      "reportCount": 1,
+      "medianDays": 10,
+      "lowDays": 10,
+      "highDays": 10,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1hq7h9i/passed_c958_my_tips/",
+          "title": "Passed c958 my tips",
+          "days": 10
+        }
+      ]
+    },
+    {
+      "courseId": "course:c959",
+      "reportCount": 3,
+      "medianDays": 20,
+      "lowDays": 14,
+      "highDays": 21,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/w8qj59/discrete_mathematics_i_c959_passed_in_3_weeks/",
+          "title": "Discrete Mathematics I – C959 PASSED in 3 Weeks",
+          "days": 21
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1kax6hg/c959_discrete_math_1_finished_in_20_days_no/",
+          "title": "C959 Discrete Math 1 - Finished in 20 days! No Stress Acquired.",
+          "days": 20
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1apn5pv/passed_c959_discrete_math_1_in_14_days/",
+          "title": "Passed C959 - Discrete Math 1 in 14 days",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:c960",
+      "reportCount": 5,
+      "medianDays": 7,
+      "lowDays": 5,
+      "highDays": 30,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1psliqy/completed_c960_in_1_month/",
+          "title": "Completed C960 in 1 Month",
+          "days": 30
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1fgl2cj/passed_c960discrete_math_2_in_9_days/",
+          "title": "Passed C960-Discrete Math 2 in 9 days",
+          "days": 9
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1lint0z/c960_discrete_math_ii_passed_2025_writeup_how_to/",
+          "title": "C960 discrete math ii passed 2025 writeup how to",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/10medgb/c960_discrete_math_ii_passed_in_5_days/",
+          "title": "C960 - Discrete Math II - Passed in 5 Days - Suggestions / Tips",
+          "days": 5
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1ovkdsb/passed_discrete_math_ii_c960_in_5_days_and_14/",
+          "title": "Passed Discrete Math II C960 in 5 days and 14 hours!",
+          "days": 5
+        }
+      ]
+    },
+    {
+      "courseId": "course:c963",
+      "reportCount": 3,
+      "medianDays": 4,
+      "lowDays": 3,
+      "highDays": 5,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kscwop/passed_c963_in_5_days/",
+          "title": "Passed C963 in 5 days!",
+          "days": 5
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/11bwy42/passed_c963_us_politics_and_constitution_in_4_days/",
+          "title": "Passed C963 US Politics and Constitution in 4 days!",
+          "days": 4
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/tcwxxg/passed_c963_in_three_days/",
+          "title": "Passed C963 in three days!",
+          "days": 3
+        }
+      ]
+    },
+    {
+      "courseId": "course:c968",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1gzmzgj/c968_software_i_done/",
+          "title": "C968 software i done",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:c969",
+      "reportCount": 1,
+      "medianDays": 5,
+      "lowDays": 5,
+      "highDays": 5,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/dw3kxx/software_ii_advanced_c_c969_passed/",
+          "title": "Software ii advanced c c969 passed",
+          "days": 5
+        }
+      ]
+    },
+    {
+      "courseId": "course:c971",
+      "reportCount": 1,
+      "medianDays": 60,
+      "lowDays": 60,
+      "highDays": 60,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/wgu_devs/comments/wdvfc0/passed_c971_mobile_application_development_using_c/",
+          "title": "Passed c971 mobile application development using c",
+          "days": 60
+        }
+      ]
+    },
+    {
+      "courseId": "course:d197",
+      "reportCount": 2,
+      "medianDays": 2,
+      "lowDays": 1,
+      "highDays": 3,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1c3hdel/passed_d197_first_attempt/",
+          "title": "Passed d197 first attempt",
+          "days": 3
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/18bumuy/version_control_d197_passed_first_try_in_a_day/",
+          "title": "Version Control: D197 -- Passed first try in a day and a half -- Here is how is how I did it!",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d198",
+      "reportCount": 2,
+      "medianDays": 8,
+      "lowDays": 1,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1ni1od5/first_term_at_wgu_started_in_sept_2_done_in_2/",
+          "title": "First term at WGU started in Sept, 2 done in 2 weeks, advise on Global Arts and Humanities - D198",
+          "days": 14
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/wmswk5/global_arts_and_humanities_d198/",
+          "title": "Global arts and humanities d198",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d199",
+      "reportCount": 1,
+      "medianDays": 8,
+      "lowDays": 8,
+      "highDays": 8,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1dsj994/passed_d199_intro_to_physical_and_human_geography/",
+          "title": "Passed d199 intro to physical and human geography",
+          "days": 8
+        }
+      ]
+    },
+    {
+      "courseId": "course:d246",
+      "reportCount": 1,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1d50kh8/d246_influential_communication_through_visual/",
+          "title": "D246 influential communication through visual",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d265",
+      "reportCount": 6,
+      "medianDays": 2,
+      "lowDays": 1,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1sq156t/d265_critical_thinking_passed_in_a_week/",
+          "title": "D265 critical thinking passed in a week",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1f9dnyh/d265_passed_in_four_days/",
+          "title": "D265 - Passed in four days",
+          "days": 4
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/17uc62q/summary_critical_thinking_reason_and_evidence/",
+          "title": "Summary critical thinking reason and evidence",
+          "days": 2
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1duic73/finished_d265_critical_thinking_reason_and/",
+          "title": "Finished D265 Critical Thinking: Reason and Evidence in 1 day, here's my full experience",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1jq4ucr/d265_critical_thinking_reason_and_evidence_down/",
+          "title": "D265 - Critical Thinking: Reason and Evidence down in 4 hours. Second class completed in my first day!",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1lh2tzk/d265_critical_thinking_reason_and_evidence_passed/",
+          "title": "D265 | Critical Thinking: Reason and Evidence | Passed in 3 hours",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d268",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1ian7a8/passed_d268_in_two_days_in_my_mind/",
+          "title": "Passed D268 in two days (in my mind).",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d269",
+      "reportCount": 2,
+      "medianDays": 5,
+      "lowDays": 3,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1eznvov/i_have_1_week_to_complete_d269_can_i_make_it/",
+          "title": "I have 1 week to complete D269 - can i make it?",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1sdz3ny/wgu_composition_writing_with_a_strategy_d269/",
+          "title": "Wgu composition writing with a strategy d269",
+          "days": 3
+        }
+      ]
+    },
+    {
+      "courseId": "course:d270",
+      "reportCount": 1,
+      "medianDays": 4,
+      "lowDays": 4,
+      "highDays": 4,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1lchy57/d270_tips_and_tricks_passed_in_4_days/",
+          "title": "D270 - Tips and Tricks (Passed in 4 Days)",
+          "days": 4
+        }
+      ]
+    },
+    {
+      "courseId": "course:d276",
+      "reportCount": 1,
+      "medianDays": 5,
+      "lowDays": 5,
+      "highDays": 5,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1g5jb1j/passed_d276_web_development_fundamentals_in_5_days/",
+          "title": "Passed d276 web development fundamentals in 5 days",
+          "days": 5
+        }
+      ]
+    },
+    {
+      "courseId": "course:d277",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/wgu_devs/comments/1eiiyfp/d277_finished/",
+          "title": "D277 finished",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d278",
+      "reportCount": 2,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1mxfkex/d278_scripting_and_programming_foundations_passed/",
+          "title": "D278 scripting and programming foundations passed",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1nldx0t/passed_d278_in_a_week_and_a_half_wo_prior_exp/",
+          "title": "Passed D278 in a week and a half w/o prior exp",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d279",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1707pvp/passed_user_interface_design_d279/",
+          "title": "Passed user interface design d279",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d280",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/wgu_devs/comments/1gl3mom/passed_d280_javascript_programming_in_3_hours/",
+          "title": "Passed D280 JavaScript Programming in ~3 hours",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d281",
+      "reportCount": 2,
+      "medianDays": 9,
+      "lowDays": 3,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1gqsuwx/passed_d281_linux_essentials_with_no_previous/",
+          "title": "Passed d281 linux essentials with no previous",
+          "days": 14
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1hudpbd/passed_lpi_linux_essentials_exam_with_an_800/",
+          "title": "Passed LPI Linux Essentials Exam with an 800 Perfect Score in 3 days study time. | Linux Foundations - D281 | Negative-Answer587",
+          "days": 3
+        }
+      ]
+    },
+    {
+      "courseId": "course:d282",
+      "reportCount": 5,
+      "medianDays": 4,
+      "lowDays": 1,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1o533p6/i_passed_d282_in_one_week_the_fun_way/",
+          "title": "I passed D282 in one week (the fun way)",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUIT/comments/1vb36xl/passed_d282_in_5_days/",
+          "title": "Passed D282 in 5 days",
+          "days": 5
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1rtoje7/d282_passed_in_4_days/",
+          "title": "D282 passed in 4 days",
+          "days": 4
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1qox8jt/how_i_passed_the_aws_certified_cloud_practitioner/",
+          "title": "How I Passed the AWS Certified Cloud Practitioner Exam / D282 Cloud Foundations in ONLY 2 Days",
+          "days": 2
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1oln7si/d282_passed_in_1_days_worth_of_studying/",
+          "title": "D282 passed in 1 days worth of studying",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d284",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/wgu_devs/comments/187y8in/i_passed_d284_software_engineering/",
+          "title": "I passed d284 software engineering",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d286",
+      "reportCount": 1,
+      "medianDays": 30,
+      "lowDays": 30,
+      "highDays": 30,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/wgu_devs/comments/1sbs2yw/passed_java_fundamentals_d286/",
+          "title": "Passed java fundamentals d286",
+          "days": 30
+        }
+      ]
+    },
+    {
+      "courseId": "course:d287",
+      "reportCount": 1,
+      "medianDays": 45,
+      "lowDays": 45,
+      "highDays": 45,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/15mocjz/d287_java_frameworks_ultimate_project_guide/",
+          "title": "D287 java frameworks ultimate project guide",
+          "days": 45
+        }
+      ]
+    },
+    {
+      "courseId": "course:d288",
+      "reportCount": 0,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1cp7hj7/i_passed_d288_backend_programming_tips/",
+          "title": "I passed d288 backend programming tips"
+        }
+      ]
+    },
+    {
+      "courseId": "course:d303",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1scchw2/passed_d303_with_2_weeks_of_study_time/",
+          "title": "Passed D303 with 2 Weeks of Study Time",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:d308",
+      "reportCount": 1,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1krwabl/d308_passed_in_1_week_here_is_how/",
+          "title": "D308 Passed in 1 Week - Here is how",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d315",
+      "reportCount": 3,
+      "medianDays": 4,
+      "lowDays": 1,
+      "highDays": 8,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1glgh1s/i_passed_network_and_security_foundations_d315_in/",
+          "title": "I passed Network and Security Foundations (D315) in 8 days. Here's how I did it.",
+          "days": 8
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUCyberSecurity/comments/1szf9py/d315_passed_in_4_days/",
+          "title": "D315 Passed in 4 days",
+          "days": 4
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kppp6e/how_i_passed_d315_network_and_security/",
+          "title": "How I Passed D315 Network and Security - Foundations in 24 Hours",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d316",
+      "reportCount": 2,
+      "medianDays": 28,
+      "lowDays": 21,
+      "highDays": 35,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1v4wtek/d316_summary_how_i_passed_in_35_days/",
+          "title": "D316 Summary - How I passed in 35 days",
+          "days": 35
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1py4cbn/d316_passed/",
+          "title": "D316 passed",
+          "days": 21
+        }
+      ]
+    },
+    {
+      "courseId": "course:d317",
+      "reportCount": 1,
+      "medianDays": 28,
+      "lowDays": 28,
+      "highDays": 28,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/19cq2r2/passed_d317_it_applications_comptia_a_core_2/",
+          "title": "Passed d317 it applications comptia a core 2",
+          "days": 28
+        }
+      ]
+    },
+    {
+      "courseId": "course:d318",
+      "reportCount": 1,
+      "medianDays": 6,
+      "lowDays": 6,
+      "highDays": 6,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/zhcgnx/passed_d318_cloud_applications_cloud/",
+          "title": "Passed d318 cloud applications cloud",
+          "days": 6
+        }
+      ]
+    },
+    {
+      "courseId": "course:d319",
+      "reportCount": 2,
+      "medianDays": 17,
+      "lowDays": 3,
+      "highDays": 30,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1j00hto/d319_passed_on_first_try/",
+          "title": "D319 passed on first try",
+          "days": 30
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUIT/comments/18dcx8i/passed_aws_cloud_architecture_d319_in_3_days/",
+          "title": "Passed AWS Cloud Architecture - D319 in 3 days",
+          "days": 3
+        }
+      ]
+    },
+    {
+      "courseId": "course:d320",
+      "reportCount": 5,
+      "medianDays": 5,
+      "lowDays": 1,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1rzg1r1/passed_d320_in_a_week_not_as_bad_as_i_thought/",
+          "title": "Passed D320 in a Week. Not As Bad As I Thought",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUCyberSecurity/comments/1f6uhjx/wgu_d320_managing_cloud_security_passed_in_6_days/",
+          "title": "WGU D320 managing cloud security- Passed in 6 days",
+          "days": 6
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/yv1qto/d320_c838_passed_in_5_days/",
+          "title": "D320 (C838) PASSED in 5 days",
+          "days": 5
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/18u4xaj/wgu_d320_managing_cloud_security_oa_passed_in_1/",
+          "title": "WGU D320 Managing Cloud Security OA passed in 1 hour.",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1dwtzwb/d320_passed_in_a_day/",
+          "title": "D320 Passed in a Day",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d322",
+      "reportCount": 2,
+      "medianDays": 5,
+      "lowDays": 3,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/18enr2c/passed_d322_what_i_did_to_pass_and_helpful/",
+          "title": "Passed d322 what i did to pass and helpful",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/18df700/i_completed_d322_in_three_days/",
+          "title": "I completed D322 in three days",
+          "days": 3
+        }
+      ]
+    },
+    {
+      "courseId": "course:d324",
+      "reportCount": 4,
+      "medianDays": 7,
+      "lowDays": 6,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1sec8ht/how_i_passed_d324_comptia_project_in_less_than_a/",
+          "title": "How I Passed D324 (CompTIA Project+) in Less Than a Week",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUIT/comments/1u0qm00/passed_comptia_project_pk0005_d324_project/",
+          "title": "Passed CompTIA Project+ (PK0-005) D324 Project Management in 1 week",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1nmhv1a/how_i_passed_project_management_d324_in_6_days/",
+          "title": "How I passed Project Management - D324 in 6 days",
+          "days": 6
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1tyriuq/d324_passed_in_6_days/",
+          "title": "D324 PASSED IN 6 DAYS",
+          "days": 6
+        }
+      ]
+    },
+    {
+      "courseId": "course:d325",
+      "reportCount": 2,
+      "medianDays": 17,
+      "lowDays": 7,
+      "highDays": 27,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1ismxgn/i_passed_network_networks_d325_in_27_days_heres/",
+          "title": "I passed Network+ (Networks – D325) in 27 days. Here's how I did it.",
+          "days": 27
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1p5tzro/networksd325_passed/",
+          "title": "Networksd325 passed",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d326",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1crzmif/d326_advanced_data_management_passed_in_2/",
+          "title": "D326 Advanced Data Management: Passed in 2 days/first submission",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d329",
+      "reportCount": 1,
+      "medianDays": 17,
+      "lowDays": 17,
+      "highDays": 17,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1isnsh0/i_passed_security_network_and_security/",
+          "title": "I passed security network and security",
+          "days": 17
+        }
+      ]
+    },
+    {
+      "courseId": "course:d332",
+      "reportCount": 1,
+      "medianDays": 42,
+      "lowDays": 42,
+      "highDays": 42,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGUCyberSecurity/comments/1k9z1eo/penetration_testing_and_vulnerability_analysis/",
+          "title": "Penetration testing and vulnerability analysis",
+          "days": 42
+        }
+      ]
+    },
+    {
+      "courseId": "course:d333",
+      "reportCount": 4,
+      "medianDays": 2,
+      "lowDays": 1,
+      "highDays": 8,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1fntvp5/summary_ethics_in_technology_d333_passed_in_8_days/",
+          "title": "Summary – Ethics in Technology D333 – Passed in 8 days",
+          "days": 8
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1uag84h/d333_summary_ethics_in_technology_how_i_passed_in/",
+          "title": "D333 Summary - Ethics in Technology - How I passed in 3 days",
+          "days": 3
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/19ea573/d333_ethics_in_technology_passed_10_hours/",
+          "title": "D333 Ethics In Technology: Passed: 10 hours",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUCyberSecurity/comments/1us8m9c/passed_ethics_in_technology_d333_in_1_day_around/",
+          "title": "Passed Ethics in Technology (D333) in 1 day (around 6 hours)",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d335",
+      "reportCount": 2,
+      "medianDays": 13,
+      "lowDays": 8,
+      "highDays": 18,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kluz5d/i_passed_d335_introduction_to_programming_in/",
+          "title": "I passed D335 - Introduction to Programming in Python in 18 days. Here's how I did it.",
+          "days": 18
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1rcns6r/d335_passed_in_8_days_no_coding_experience_tips/",
+          "title": "D335 passed in 8 days, no coding experience + Tips!",
+          "days": 8
+        }
+      ]
+    },
+    {
+      "courseId": "course:d336",
+      "reportCount": 5,
+      "medianDays": 3,
+      "lowDays": 2,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1to5dj1/how_i_passed_d336_in_a_week_can_be_done_in_3_days/",
+          "title": "How I Passed D336 in a Week (Can be done in 3 days)",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1cgunvc/business_of_it_applications_d336_passed_in_3_days/",
+          "title": "Business of IT Applications D336: Passed in 3 days with 37/40 = 93%",
+          "days": 3
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1blgklw/d336itil_4_foundation_passed_in_3_days_my/",
+          "title": "D336/ITIL 4 Foundation Passed in 3 Days - My Thoughts/Tips",
+          "days": 3
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUIT/comments/1cgurqt/business_of_it_applications_d336_passed_in_3_days/",
+          "title": "Business of it applications d336 passed in 3 days",
+          "days": 3
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1qpornq/passed_d336_in_2_days_my_method/",
+          "title": "Passed D336 In 2 Days (My Method)",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d337",
+      "reportCount": 4,
+      "medianDays": 9,
+      "lowDays": 1,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/zuloga/d337_iot_and_infrastructure_passed_in_two_weeks/",
+          "title": "D337 IoT and infrastructure passed in two weeks. Read the material, and it's a pretty easy pass.",
+          "days": 14
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/104eeyh/d337_internet_of_things_iot_and_infrastructure/",
+          "title": "D337 internet of things iot and infrastructure",
+          "days": 10
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kh8uic/d337_passed_in_a_week/",
+          "title": "D337- Passed in a week",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1j5f6uf/passed_iot_infrastructure_d337_in_3_hours_total/",
+          "title": "Passed IoT & Infrastructure (D337) in 3 Hours Total",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d338",
+      "reportCount": 1,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1343h3a/d338_cloud_platform_solutions_passed_first_attempt/",
+          "title": "D338 cloud platform solutions passed first attempt",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d339",
+      "reportCount": 2,
+      "medianDays": 10,
+      "lowDays": 5,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1k06l42/is_d339_technical_communication_possible_to/",
+          "title": "is d339 technical communication possible to complete by the end of this month? (2 weeks)",
+          "days": 14
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/11qc56n/d339technical_communication/",
+          "title": "D339technical communication",
+          "days": 5
+        }
+      ]
+    },
+    {
+      "courseId": "course:d340",
+      "reportCount": 2,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1jiqrjh/passed_cysa_d340_in_1_week/",
+          "title": "Passed CySA+ / D340 in 1 Week",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUCyberSecurity/comments/1q6jo8r/cysa_d340_passed/",
+          "title": "Cysa d340 passed",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d341",
+      "reportCount": 1,
+      "medianDays": 28,
+      "lowDays": 28,
+      "highDays": 28,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/19chz00/passed_cloud_deployment_and_operations_d341c924/",
+          "title": "Passed cloud deployment and operations d341c924",
+          "days": 28
+        }
+      ]
+    },
+    {
+      "courseId": "course:d370",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1c4lncu/d370_it_leadership_foundations/",
+          "title": "D370 it leadership foundations",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d372",
+      "reportCount": 1,
+      "medianDays": 4,
+      "lowDays": 4,
+      "highDays": 4,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1efezq7/passed_systems_thinking_d372/",
+          "title": "Passed systems thinking d372",
+          "days": 4
+        }
+      ]
+    },
+    {
+      "courseId": "course:d385",
+      "reportCount": 1,
+      "medianDays": 10,
+      "lowDays": 10,
+      "highDays": 10,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kfg3bs/d385_software_security_and_testing_passed_10_days/",
+          "title": "D385 software security and testing passed 10 days",
+          "days": 10
+        }
+      ]
+    },
+    {
+      "courseId": "course:d386",
+      "reportCount": 2,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1g6a0he/passed_d386_7_days_a_bit_tough/",
+          "title": "Passed D386 7 days - A bit tough",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1sqt4gz/passed_d386_first_try/",
+          "title": "Passed d386 first try",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d387",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/18w0yx5/d387_advanced_java/",
+          "title": "D387 advanced java",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:d388",
+      "reportCount": 4,
+      "medianDays": 3,
+      "lowDays": 2,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1u8eqhn/d388_spreadsheets_i_passed_in_2_weeks/",
+          "title": "D388 - Spreadsheets (I Passed in 2 Weeks)",
+          "days": 14
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kw8mhm/how_i_passed_d388_fundamentals_of_spreadsheets/",
+          "title": "How i passed d388 fundamentals of spreadsheets",
+          "days": 4
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1imjjnv/my_experience_with_d388_fundamentals_of/",
+          "title": "My experience with D388 Fundamentals of Spreadsheets and Data Presentations (finished in 2 days)",
+          "days": 2
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1lz22mz/fundamentals_of_spreadsheets_d388_tips_passed_in/",
+          "title": "Fundamentals of Spreadsheets D388 | Tips | Passed in 2 days",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d412",
+      "reportCount": 1,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1iwl6v8/d412_network_analytics_and_troubleshooting_tips/",
+          "title": "D412 network analytics and troubleshooting tips",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d413",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1ner75n/d413_passed_in_2_weeks/",
+          "title": "D413 Passed in 2 weeks",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:d414",
+      "reportCount": 1,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1mekn83/d414_cyber_operations_fundamentals_passed_in_7/",
+          "title": "D414 Cyber Operations Fundamentals passed in 7 days",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d415",
+      "reportCount": 4,
+      "medianDays": 3,
+      "lowDays": 1,
+      "highDays": 10,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/18o64hj/software_defined_networking_d415_passed_and_now/",
+          "title": "Software defined networking d415 passed and now",
+          "days": 10
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1uivx0z/passed_software_defined_networking_d415_in_4_days/",
+          "title": "Passed Software Defined Networking D415 in 4 Days",
+          "days": 4
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1edw1oa/passed_d415_in_7_hours/",
+          "title": "Passed D415 in 7 hours",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUIT/comments/1i1m1py/d415_software_defined_networking_passed_in_two/",
+          "title": "D415 Software Defined Networking passed in two hours",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d416",
+      "reportCount": 1,
+      "medianDays": 84,
+      "lowDays": 84,
+      "highDays": 84,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1s6i578/d416_cisco_devnet_fundamentals/",
+          "title": "D416 cisco devnet fundamentals",
+          "days": 84
+        }
+      ]
+    },
+    {
+      "courseId": "course:d417",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1iiq242/d417_network_automation_passed_in_just_over_24/",
+          "title": "D417 Network Automation: Passed in just over 24 hours, but not without some headaches",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d419",
+      "reportCount": 1,
+      "medianDays": 56,
+      "lowDays": 56,
+      "highDays": 56,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1pu69zt/passed_d419_ccna_certification/",
+          "title": "Passed d419 ccna certification",
+          "days": 56
+        }
+      ]
+    },
+    {
+      "courseId": "course:d420",
+      "reportCount": 1,
+      "medianDays": 21,
+      "lowDays": 21,
+      "highDays": 21,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1phe1j5/d420_passed/",
+          "title": "D420 passed",
+          "days": 21
+        }
+      ]
+    },
+    {
+      "courseId": "course:d421",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1axhyol/passed_discrete_math_functions_and_relations_d421/",
+          "title": "Passed discrete math functions and relations d421",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:d422",
+      "reportCount": 1,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/17tdlek/d422_passed_what_to_expect/",
+          "title": "D422 passed what to expect",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d424",
+      "reportCount": 1,
+      "medianDays": 21,
+      "lowDays": 21,
+      "highDays": 21,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1efdfd7/i_passed_d424_swe_capstone_tips/",
+          "title": "I passed d424 swe capstone tips",
+          "days": 21
+        }
+      ]
+    },
+    {
+      "courseId": "course:d426",
+      "reportCount": 2,
+      "medianDays": 13,
+      "lowDays": 5,
+      "highDays": 21,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1nge6yb/d426_how_to_pass_2025v3/",
+          "title": "D426 how to pass 2025v3",
+          "days": 21
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1tv6p6p/how_i_passed_d426_in_about_5_days/",
+          "title": "How I Passed D426 In About 5 Days",
+          "days": 5
+        }
+      ]
+    },
+    {
+      "courseId": "course:d427",
+      "reportCount": 4,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGUIT/comments/1v3xe21/i_passed_d427_in_2_days_with_no_sql_experience/",
+          "title": "I passed D427 in 2 days with no SQL experience.",
+          "days": 2
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kt41e6/d427_data_management_applications_new_version/",
+          "title": "D427 Data Management - Applications New Version Passed in 2 hours",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1pfjlzb/passed_d427_with_812_hours_total_prep_time/",
+          "title": "Passed D427 with 8-12 hours total prep time.",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1sfhby2/d427_data_management_applications_passed_in_24/",
+          "title": "D427 Data Management Applications Passed in < 24 hours",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d428",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/17b52cq/d428_design_thinking_for_business_review/",
+          "title": "D428 design thinking for business review",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d429",
+      "reportCount": 1,
+      "medianDays": 5,
+      "lowDays": 5,
+      "highDays": 5,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1poo21n/d429_introduction_to_ai_for_computer_scientists/",
+          "title": "D429 introduction to ai for computer scientists",
+          "days": 5
+        }
+      ]
+    },
+    {
+      "courseId": "course:d430",
+      "reportCount": 1,
+      "medianDays": 28,
+      "lowDays": 28,
+      "highDays": 28,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1l0wxmc/i_passed_d430_fundamentals_of_information/",
+          "title": "I passed d430 fundamentals of information",
+          "days": 28
+        }
+      ]
+    },
+    {
+      "courseId": "course:d459",
+      "reportCount": 1,
+      "medianDays": 3,
+      "lowDays": 3,
+      "highDays": 3,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1tojh2i/d459_passed_in_3_days/",
+          "title": "D459 passed in 3 days",
+          "days": 3
+        }
+      ]
+    },
+    {
+      "courseId": "course:d479",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/wgu_devs/comments/1riyuwn/user_experience_design_d479_confused_by_feedback/",
+          "title": "User experience design d479 confused by feedback",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d480",
+      "reportCount": 2,
+      "medianDays": 9,
+      "lowDays": 7,
+      "highDays": 10,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1hwsctq/d480_passed_quickly_here_is_how/",
+          "title": "D480 passed quickly here is how",
+          "days": 10
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kffwwj/d480_software_design_and_quality_assurance_passed/",
+          "title": "D480 Software Design and Quality Assurance PASSED ~ 1 week",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d491",
+      "reportCount": 1,
+      "medianDays": 5,
+      "lowDays": 5,
+      "highDays": 5,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1q98h00/passed_d491_introduction_to_analytics_oa/",
+          "title": "Passed d491 introduction to analytics oa",
+          "days": 5
+        }
+      ]
+    },
+    {
+      "courseId": "course:d492",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1qia6gn/d492_comptia_data_da0002_passed/",
+          "title": "D492 comptia data da0002 passed",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:d493",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1i5u6fg/d493_scripting_and_programming_applications/",
+          "title": "D493 - Scripting and Programming - Applications Passed 2 Weeks",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:d494",
+      "reportCount": 1,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1faf776/passed_d494_data_and_information_governance/",
+          "title": "Passed d494 data and information governance",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d495",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kspzhi/d495_big_data_task_1/",
+          "title": "D495 big data task 1",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:d496",
+      "reportCount": 1,
+      "medianDays": 5,
+      "lowDays": 5,
+      "highDays": 5,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1ktutmu/course_one_of_the_bsda_nanodegree_completed496/",
+          "title": "Course one of the bsda nanodegree completed496",
+          "days": 5
+        }
+      ]
+    },
+    {
+      "courseId": "course:d497",
+      "reportCount": 1,
+      "medianDays": 7,
+      "lowDays": 7,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1jobype/d497_udacity_data_wrangling/",
+          "title": "D497 udacity data wrangling",
+          "days": 7
+        }
+      ]
+    },
+    {
+      "courseId": "course:d498",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1rvsuti/d496_d497_d498_d499_d500_d501_udacity_nanodegree/",
+          "title": "D496 d497 d498 d499 d500 d501 udacity nanodegree",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d499",
+      "reportCount": 1,
+      "medianDays": 32,
+      "lowDays": 32,
+      "highDays": 32,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1kh0w2r/d499_data_analytics_machine_learning/",
+          "title": "D499 data analytics machine learning",
+          "days": 32
+        }
+      ]
+    },
+    {
+      "courseId": "course:d501",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGUIT/comments/1g3oasr/machine_learning_devops_d501_need_help_for_first/",
+          "title": "Machine learning devops d501 need help for first",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:d502",
+      "reportCount": 1,
+      "medianDays": 42,
+      "lowDays": 42,
+      "highDays": 42,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1iruqqa/d502_data_analytics_capstone/",
+          "title": "D502 data analytics capstone",
+          "days": 42
+        }
+      ]
+    },
+    {
+      "courseId": "course:d522",
+      "reportCount": 1,
+      "medianDays": 21,
+      "lowDays": 21,
+      "highDays": 21,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1g85w8d/d522_python_for_it_automation_passed_first_attempt/",
+          "title": "D522 python for it automation passed first attempt",
+          "days": 21
+        }
+      ]
+    },
+    {
+      "courseId": "course:d682",
+      "reportCount": 1,
+      "medianDays": 21,
+      "lowDays": 21,
+      "highDays": 21,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1mcwbq3/wgu_d682_guide_task_1_ai_optimization/",
+          "title": "Wgu d682 guide task 1 ai optimization",
+          "days": 21
+        }
+      ]
+    },
+    {
+      "courseId": "course:d684",
+      "reportCount": 4,
+      "medianDays": 5,
+      "lowDays": 1,
+      "highDays": 7,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1ik59uf/d684_intro_to_cs_completed_in_less_than_a_week/",
+          "title": "D684 - Intro to CS completed in less than a week",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1j4b1ky/passed_d684_intro_to_computer_science_in_5_days/",
+          "title": "Passed D684 Intro to Computer Science in 5 Days",
+          "days": 5
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1qw69us/d684_passed_in_4_days/",
+          "title": "D684- passed in 4 days :)",
+          "days": 4
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1kd92ii/introduction_to_computer_science_d684_completed/",
+          "title": "Introduction to Computer Science - D684 COMPLETED IN 1 DAY!",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d685",
+      "reportCount": 4,
+      "medianDays": 2,
+      "lowDays": 1,
+      "highDays": 5,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1tm0tkz/passed_d685_in_5_days/",
+          "title": "Passed d685 in 5 days",
+          "days": 5
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1t4wzur/how_i_passed_d685_in_about_3_days/",
+          "title": "How I Passed D685 in about 3 Days",
+          "days": 3
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1imkzu5/passed_my_first_wgu_course_practical_applications/",
+          "title": "Passed my first wgu course practical applications",
+          "days": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/WGUCyberSecurity/comments/1qq0v7h/d685_practical_applications_of_prompt_passed_in/",
+          "title": "D685 - Practical Applications of Prompt passed in under 24 hours",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d686",
+      "reportCount": 4,
+      "medianDays": 10,
+      "lowDays": 4,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1kgd5bk/d686_operating_systems_for_computer_scientist/",
+          "title": "D686 Operating Systems for Computer Scientist. Comfortably passed in 2 weeks.",
+          "days": 14
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1jektyk/d686_operating_systems_for_computer_scientist_oa/",
+          "title": "D686 operating systems for computer scientist oa",
+          "days": 13
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1qripob/d686_how_i_completed_it_in_a_week_full_guide/",
+          "title": "D686 - How I Completed it in a Week (Full Guide)",
+          "days": 7
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1l0b7qk/d686_passed_in_4_days/",
+          "title": "D686, passed in 4 days",
+          "days": 4
+        }
+      ]
+    },
+    {
+      "courseId": "course:d687",
+      "reportCount": 1,
+      "medianDays": 60,
+      "lowDays": 60,
+      "highDays": 60,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_CompSci/comments/1i674zv/new_2025_cs_program_completion_more_in_comments/",
+          "title": "New 2025 cs program completion more in comments",
+          "days": 60
+        }
+      ]
+    },
+    {
+      "courseId": "course:d773",
+      "reportCount": 1,
+      "medianDays": 2,
+      "lowDays": 2,
+      "highDays": 2,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1l7fteu/d773_technology_and_ethics_for_the_education/",
+          "title": "D773 technology and ethics for the education",
+          "days": 2
+        }
+      ]
+    },
+    {
+      "courseId": "course:d827",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1pzlglm/d827_advice/",
+          "title": "D827 advice",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d828",
+      "reportCount": 0,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGUCyberSecurity/comments/1oovom2/d828_legal_issues_in_information_security/",
+          "title": "D828 legal issues in information security"
+        }
+      ]
+    },
+    {
+      "courseId": "course:d829",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1px7nhw/how_i_passed_d829_digital_forensics_in/",
+          "title": "How I passed D829 (Digital Forensics in Cybersecurity) in 1 Day",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:d830",
+      "reportCount": 1,
+      "medianDays": 3,
+      "lowDays": 3,
+      "highDays": 3,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1ggsu02/intro_to_cryptography_passed/",
+          "title": "Intro to cryptography passed",
+          "days": 3
+        }
+      ]
+    },
+    {
+      "courseId": "course:d832",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGUCyberSecurity/comments/1p54cww/d832/",
+          "title": "D832",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:e004",
+      "reportCount": 1,
+      "medianDays": 4,
+      "lowDays": 4,
+      "highDays": 4,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1orvtyd/introduction_to_it_e004_assessment_guardian/",
+          "title": "Introduction to it e004 assessment guardian",
+          "days": 4
+        }
+      ]
+    },
+    {
+      "courseId": "course:e010",
+      "reportCount": 2,
+      "medianDays": 11,
+      "lowDays": 1,
+      "highDays": 21,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1qmauq5/e010_foundations_of_programming_python_passed/",
+          "title": "E010 foundations of programming python passed",
+          "days": 21
+        },
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1vag5lj/passed_e010_python_in_1_day/",
+          "title": "Passed E010 Python in 1 Day",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:e025",
+      "reportCount": 1,
+      "medianDays": 1,
+      "lowDays": 1,
+      "highDays": 1,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1nye2fv/cloud_and_network_security_modelse025/",
+          "title": "Cloud and network security modelse025",
+          "days": 1
+        }
+      ]
+    },
+    {
+      "courseId": "course:e026",
+      "reportCount": 1,
+      "medianDays": 14,
+      "lowDays": 14,
+      "highDays": 14,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU_BSCNE/comments/1rzdmd1/finished_e026_ai_for_it_automation_in_2_weeks/",
+          "title": "Finished E026 AI for IT Automation in 2 weeks",
+          "days": 14
+        }
+      ]
+    },
+    {
+      "courseId": "course:e027",
+      "reportCount": 0,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1rp8zth/e027_task_2_tip_of_the_day/",
+          "title": "E027 task 2 tip of the day"
+        }
+      ]
+    },
+    {
+      "courseId": "course:e028",
+      "reportCount": 0,
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/WGU/comments/1rsdidy/e028_difficulty/",
+          "title": "E028 difficulty"
+        }
+      ]
     }
   ],
   "degreeRules": [

@@ -7,7 +7,13 @@ import {
   type UnresolvedMention,
 } from "./build-cert-clears";
 import { buildCoursesFromCatalog } from "./build-courses";
+import {
+  buildCourseTimes,
+  type CourseTimeWarning,
+} from "./build-course-times";
+import { CURATED_COURSE_TIMES } from "./course-time-seed";
 import { DEGREE_RULES } from "./course-seed";
+import { searchCourseReports, type SearchOutcome } from "./reddit-search";
 import {
   buildGuidelineRules,
   mentionsCertifications,
@@ -38,6 +44,9 @@ const BROWSER_USER_AGENT =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
 
 const FETCH_DELAY_MS = 600;
+
+/** Reddit is doing us a favour by answering at all; go slower there. */
+const REDDIT_DELAY_MS = 1000;
 
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -227,6 +236,32 @@ async function main() {
     }
   }
 
+  // Times are best-effort. Set INGEST_SKIP_REDDIT=1 to build from the curated
+  // table alone, which is what a blocked or throttled run falls back to anyway.
+  const skipReddit = process.env.INGEST_SKIP_REDDIT === "1";
+  let search: SearchOutcome = { reports: [], failedCodes: [], rateLimited: false };
+  if (skipReddit) {
+    console.log("Skipping community clear-time search (INGEST_SKIP_REDDIT=1)");
+  } else {
+    console.log("Searching for community clear times…");
+    search = await searchCourseReports(
+      courses.map((c) => c.code).sort(),
+      {
+        cacheDir: path.resolve(process.cwd(), "data/cache/reddit"),
+        userAgent: BROWSER_USER_AGENT,
+        delayMs: REDDIT_DELAY_MS,
+        log: (message) => console.log(message),
+      },
+    );
+    console.log(`  ${search.reports.length} reports read from search results`);
+  }
+
+  const { courseTimes, warnings: courseTimeWarnings } = buildCourseTimes(
+    courses,
+    CURATED_COURSE_TIMES,
+    search.reports,
+  );
+
   const catalog = catalogSchema.parse({
     meta: {
       fetchedAt: new Date().toISOString(),
@@ -270,6 +305,7 @@ async function main() {
     transferProviders: TRANSFER_PROVIDERS,
     transferCourses: TRANSFER_COURSES,
     transferCourseClears,
+    courseTimes,
     degreeRules: DEGREE_RULES,
   });
 
@@ -291,6 +327,55 @@ async function main() {
     guidelineRows,
     rules,
   });
+
+  reportCourseTimes(catalog.courseTimes, courses, courseTimeWarnings, search);
+}
+
+/**
+ * Clear-time coverage and every rejected row. A curated row that quietly stops
+ * matching the catalog would otherwise just vanish from the site.
+ */
+function reportCourseTimes(
+  courseTimes: { courseId: string; reportCount: number; medianDays?: number }[],
+  courses: { id: string; code: string }[],
+  warnings: CourseTimeWarning[],
+  search: SearchOutcome,
+) {
+  const withNumber = courseTimes.filter((t) => t.reportCount > 0);
+  const totalReports = courseTimes.reduce((sum, t) => sum + t.reportCount, 0);
+
+  console.log("Community clear times:");
+  console.log(
+    `  ${withNumber.length}/${courses.length} courses have a time, from ${totalReports} reports`,
+  );
+
+  const linkOnly = courseTimes.length - withNumber.length;
+  if (linkOnly > 0) {
+    console.log(`  ${linkOnly} courses have a linked report but no stated time`);
+  }
+
+  if (search.rateLimited) {
+    console.log("  ! search stopped early on a rate limit; times may be thin");
+  }
+  if (search.failedCodes.length > 0) {
+    console.log(
+      `  ${search.failedCodes.length} courses could not be searched: ${search.failedCodes.join(", ")}`,
+    );
+  }
+
+  for (const warning of warnings) {
+    if (warning.kind === "miscited") {
+      console.log(
+        `  ! ${warning.code}: cited post is about ${warning.cited.join(", ")} — row dropped (${warning.url})`,
+      );
+    } else if (warning.kind === "unknownCourse") {
+      console.log(`  ! ${warning.code}: no such course in any program we publish`);
+    } else {
+      console.log(
+        `  ! ${warning.code}: curated name "${warning.seedName}" vs catalog "${warning.catalogName}"`,
+      );
+    }
+  }
 }
 
 /**

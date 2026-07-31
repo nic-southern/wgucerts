@@ -92,6 +92,30 @@ export const transferCourseClearSchema = z.object({
   confidence: z.enum(["published", "estimated"]),
 });
 
+/** A single student's account of how long a course took. */
+export const courseTimeReportSchema = z.object({
+  url: z.string().url(),
+  title: z.string().min(1),
+  /** Absent when the post is worth reading but never states a duration. */
+  days: z.number().positive().optional(),
+});
+
+/**
+ * Community-reported clear time for one course. Self-reported and
+ * self-selecting: people post when they pass quickly, so `reportCount` travels
+ * with the estimate and the UI must show it.
+ */
+export const courseTimeSchema = z.object({
+  courseId: z.string().min(1),
+  /** How many reports state a duration; may be 0 while `reports` is not empty. */
+  reportCount: z.number().int().nonnegative(),
+  /** Median rather than mean: these distributions have long right tails. */
+  medianDays: z.number().positive().optional(),
+  lowDays: z.number().positive().optional(),
+  highDays: z.number().positive().optional(),
+  reports: z.array(courseTimeReportSchema),
+});
+
 export const degreeRuleSchema = z.object({
   kind: degreeKindSchema,
   clearsCategories: z.array(courseCategorySchema),
@@ -120,6 +144,7 @@ export const catalogSchema = z.object({
   transferProviders: z.array(transferProviderSchema).default([]),
   transferCourses: z.array(transferCourseSchema).default([]),
   transferCourseClears: z.array(transferCourseClearSchema).default([]),
+  courseTimes: z.array(courseTimeSchema).default([]),
   degreeRules: z.array(degreeRuleSchema),
 });
 
@@ -137,5 +162,7 @@ export type NonTransferableCourse = z.infer<typeof nonTransferableCourseSchema>;
 export type TransferProvider = z.infer<typeof transferProviderSchema>;
 export type TransferCourse = z.infer<typeof transferCourseSchema>;
 export type TransferCourseClear = z.infer<typeof transferCourseClearSchema>;
+export type CourseTimeReport = z.infer<typeof courseTimeReportSchema>;
+export type CourseTime = z.infer<typeof courseTimeSchema>;
 export type DegreeRule = z.infer<typeof degreeRuleSchema>;
 export type Catalog = z.infer<typeof catalogSchema>;
