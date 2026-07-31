@@ -57,6 +57,15 @@ export type MatchResult = {
   remainingDays: number;
   /** Remaining courses nobody has reported a time for, so the sum is a floor. */
   remainingWithoutTime: number;
+  /**
+   * Courses credited by a certificate, prior degree, or transfer. Courses the
+   * planner passed at WGU are excluded: doing the work saved no time.
+   */
+  creditedCount: number;
+  /** Reported days for those courses — coursework the planner skips. */
+  savedDays: number;
+  /** Credited courses with no reported time, so `savedDays` is a floor too. */
+  savedWithoutTime: number;
   applicableCertificates: ApplicableCertificate[];
   ineligibleCertificates: ApplicableCertificate[];
   degreeNotes: string | null;
@@ -80,6 +89,9 @@ export function matchProgram(
       percentComplete: 0,
       remainingDays: 0,
       remainingWithoutTime: 0,
+      creditedCount: 0,
+      savedDays: 0,
+      savedWithoutTime: 0,
       applicableCertificates: [],
       ineligibleCertificates: [],
       degreeNotes: null,
@@ -235,6 +247,13 @@ export function matchProgram(
     0,
   );
 
+  // Credit earned elsewhere is time skipped. Ticking a course off by hand is
+  // not, so a course only counts here if something other than the planner's own
+  // mark clears it.
+  const credited = courseMatches.filter((c) =>
+    c.reasons.some((r) => r.type !== "self"),
+  );
+
   return {
     programId,
     courses: courseMatches,
@@ -249,6 +268,9 @@ export function matchProgram(
         : 0,
     remainingDays,
     remainingWithoutTime: remaining.filter((c) => !c.time?.medianDays).length,
+    creditedCount: credited.length,
+    savedDays: credited.reduce((sum, c) => sum + (c.time?.medianDays ?? 0), 0),
+    savedWithoutTime: credited.filter((c) => !c.time?.medianDays).length,
     applicableCertificates,
     ineligibleCertificates,
     degreeNotes,

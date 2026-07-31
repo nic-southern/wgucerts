@@ -277,6 +277,59 @@ describe("matchProgram", () => {
     expect(byCode.get("D322")?.time).toBeNull();
   });
 
+  it("counts time skipped by a certificate", () => {
+    const profile = makeProfile({
+      certificateIds: ["cert:comptia:network-plus"],
+    });
+    const result = matchProgram(catalog, profile, "program:bs-it");
+    // The cert clears D315, which students reported at 5 days.
+    expect(result.creditedCount).toBe(1);
+    expect(result.savedDays).toBe(5);
+    expect(result.savedWithoutTime).toBe(0);
+  });
+
+  it("counts time skipped by a prior degree and a transfer course together", () => {
+    const profile = makeProfile({
+      priorDegree: "associates_it",
+      completedTransferCourseIds: ["transfer:sophia:english-comp-i"],
+    });
+    const result = matchProgram(catalog, profile, "program:bs-it");
+    // The degree clears all three; D315 is 5 days and D269 is 3, and nobody has
+    // reported on D322.
+    expect(result.creditedCount).toBe(3);
+    expect(result.savedDays).toBe(8);
+    expect(result.savedWithoutTime).toBe(1);
+  });
+
+  it("credits nothing for a course the planner passed themselves", () => {
+    const profile = makeProfile({ completedCourseIds: ["course:d315"] });
+    const result = matchProgram(catalog, profile, "program:bs-it");
+    expect(result.creditedCount).toBe(0);
+    expect(result.savedDays).toBe(0);
+  });
+
+  it("still credits a course the planner also ticked off", () => {
+    // The certificate is why it is done; the tick does not cancel that.
+    const profile = makeProfile({
+      certificateIds: ["cert:comptia:network-plus"],
+      completedCourseIds: ["course:d315"],
+    });
+    const result = matchProgram(catalog, profile, "program:bs-it");
+    expect(result.creditedCount).toBe(1);
+    expect(result.savedDays).toBe(5);
+  });
+
+  it("counts a course once even when several credentials clear it", () => {
+    const profile = makeProfile({
+      priorDegree: "associates",
+      completedTransferCourseIds: ["transfer:sophia:english-comp-i"],
+    });
+    const result = matchProgram(catalog, profile, "program:bs-it");
+    // Both the degree and the Sophia course clear D269; it is 3 days, not 6.
+    expect(result.creditedCount).toBe(1);
+    expect(result.savedDays).toBe(3);
+  });
+
   it("ignores a finished transfer course that clears nothing in this program", () => {
     const profile = makeProfile({
       completedTransferCourseIds: ["transfer:sophia:unknown"],

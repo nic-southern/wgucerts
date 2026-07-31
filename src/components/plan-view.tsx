@@ -9,14 +9,11 @@ import { CourseClearOptions } from "./course-clear-options";
 import { CourseTimeNote } from "./course-time-note";
 import { ProgramPicker } from "./program-picker";
 
+/** Bare quantity; callers add their own hedging so it never doubles up. */
 function formatDays(days: number): string {
   if (days < 14) return `${days} ${days === 1 ? "day" : "days"}`;
-  if (days < 60) {
-    const weeks = Math.round(days / 7);
-    return `about ${weeks} weeks`;
-  }
-  const months = Math.round(days / 30);
-  return `about ${months} months`;
+  if (days < 60) return `${Math.round(days / 7)} weeks`;
+  return `${Math.round(days / 30)} months`;
 }
 
 export function PlanView({ catalog }: { catalog: Catalog }) {
@@ -74,11 +71,26 @@ export function PlanView({ catalog }: { catalog: Catalog }) {
                 ? ` · ${result.clearedCount} of ${result.courses.length} courses`
                 : ""}
             </p>
+            {result && result.savedDays > 0 ? (
+              <p className="progress-panel__saved">
+                <strong>
+                  You skip about {formatDays(result.savedDays)} of coursework
+                </strong>{" "}
+                on the {result.creditedCount}{" "}
+                {result.creditedCount === 1 ? "course" : "courses"} your
+                credentials and transfer credit cover
+                {result.savedWithoutTime > 0
+                  ? `, plus ${result.savedWithoutTime} with no reports yet`
+                  : ""}
+                .
+              </p>
+            ) : null}
+
             {result && result.remainingCount > 0 ? (
               result.remainingDays > 0 ? (
                 <p className="progress-panel__estimate">
                   Adding up what students reported for each course, the ones you
-                  have left come to {formatDays(result.remainingDays)}
+                  have left come to about {formatDays(result.remainingDays)}
                   {result.remainingWithoutTime > 0
                     ? `, and ${result.remainingWithoutTime} more ${
                         result.remainingWithoutTime === 1 ? "course has" : "courses have"

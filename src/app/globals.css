@@ -556,6 +556,18 @@ a:hover {
   color: var(--ink-soft);
 }
 
+.progress-panel__saved {
+  margin: 0.6rem 0 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.6rem;
+  background: rgba(31, 107, 69, 0.08);
+  font-size: 0.92rem;
+}
+
+.progress-panel__saved strong {
+  color: var(--accent-deep);
+}
+
 .course-line {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
