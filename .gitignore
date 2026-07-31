@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# extracted PDF text cache (catalog.json is the committed source of truth)
+/data/catalog/*.txt
+
 # production
 /build
 
