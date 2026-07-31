@@ -193,13 +193,16 @@ export function PlanView({ catalog }: { catalog: Catalog }) {
                   className={row.cleared ? "is-cleared" : "is-remaining"}
                 >
                   <div className="course-line">
-                    <input
-                      type="checkbox"
-                      className="course-done"
-                      checked={profile.completedCourseIds.includes(row.course.id)}
-                      onChange={() => toggleCompletedCourse(row.course.id)}
-                      aria-label={`Mark ${row.course.code} ${row.course.name} finished`}
-                    />
+                    <label className="course-done">
+                      <input
+                        type="checkbox"
+                        checked={profile.completedCourseIds.includes(
+                          row.course.id,
+                        )}
+                        onChange={() => toggleCompletedCourse(row.course.id)}
+                        aria-label={`Mark ${row.course.code} ${row.course.name} finished`}
+                      />
+                    </label>
                     <div>
                       <div className="course-row">
                         <span className="course-code">{row.course.code}</span>
