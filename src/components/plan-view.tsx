@@ -226,9 +226,8 @@ export function PlanView({ catalog }: { catalog: Catalog }) {
                             </li>
                           ))}
                         </ul>
-                      ) : (
-                        <CourseTimeNote time={row.time} />
-                      )}
+                      ) : null}
+                      <CourseTimeNote time={row.time} showEmpty={!row.cleared} />
                       <CourseClearOptions
                         catalog={catalog}
                         courseId={row.course.id}

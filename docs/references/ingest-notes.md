@@ -73,6 +73,17 @@ people post when a course went quickly. Ingest re-checks each curated row agains
 its cited post names — that check is what caught two rows whose times belonged to other
 courses.
 
+Each report carries the day it was posted, so a reader can tell a course rewritten last
+year from an account written five years ago. Reports list newest first and the UI shows only
+the first few, so the date decides what a reader sees. Curated rows store no date of their
+own: `parsePostDates` indexes every result on the search pages already in the cache,
+including those the report filters reject, which dates most rows without another request.
+A row nothing links to stays undated and the UI omits the date rather than guessing.
+
+One thread can serve several courses. The thread on the new BSIT courses gives a duration
+for `E005` and task detail with no duration for `E006`, `E007`, and `E008`, so it appears
+under all four — three of them as a link with no number.
+
 ### Fetching
 
 - Endpoints and the program college code live in `scripts/ingest/partner-api.ts`; responses

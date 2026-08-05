@@ -64,6 +64,46 @@ function canonicalPostUrl(href: string): string | null {
   }
 }
 
+/** `2026-06-02T22:40:46+00:00` → `2026-06-02`. */
+function postedDay(datetime: string | undefined): string | undefined {
+  if (!datetime) return undefined;
+  const day = datetime.slice(0, 10);
+  return /^\d{4}-\d{2}-\d{2}$/.test(day) ? day : undefined;
+}
+
+/** The submitted date sits in the meta block beside the title link. */
+function resultDate(
+  $: cheerio.CheerioAPI,
+  titleLink: ReturnType<cheerio.CheerioAPI>,
+): string | undefined {
+  const meta = titleLink.closest("header").next(".search-result-meta");
+  return postedDay(meta.find("time").first().attr("datetime"));
+}
+
+/**
+ * Every post the page lists, with the day it was posted.
+ *
+ * Deliberately unfiltered: the curated table cites posts whose titles never
+ * claim a duration, and this is where their dates come from. Reading a listing
+ * we already hold costs nothing, whereas fetching each cited post would mean
+ * another request per row.
+ */
+export function parsePostDates(html: string): Map<string, string> {
+  const $ = cheerio.load(html);
+  const dates = new Map<string, string>();
+
+  $("a.search-title").each((_, el) => {
+    const link = $(el);
+    const href = link.attr("href");
+    if (!href) return;
+    const url = canonicalPostUrl(href);
+    const date = resultDate($, link);
+    if (url && date && !dates.has(url)) dates.set(url, date);
+  });
+
+  return dates;
+}
+
 /**
  * Pulls reports for one course out of a search page.
  *
@@ -83,8 +123,9 @@ export function parseSearchResultsHtml(
   $("a.search-title").each((_, el) => {
     if (reports.length >= maxPerCourse) return;
 
-    const title = $(el).text().trim();
-    const href = $(el).attr("href");
+    const link = $(el);
+    const title = link.text().trim();
+    const href = link.attr("href");
     if (!title || !href) return;
 
     const url = canonicalPostUrl(href);
@@ -101,7 +142,13 @@ export function parseSearchResultsHtml(
     if (!duration) return;
 
     seen.add(url);
-    reports.push({ code, url, title, days: duration.days });
+    reports.push({
+      code,
+      url,
+      title,
+      days: duration.days,
+      postedAt: resultDate($, link),
+    });
   });
 
   return reports;
@@ -117,6 +164,8 @@ export type SearchOptions = {
 
 export type SearchOutcome = {
   reports: ScrapedReport[];
+  /** Post URL → day posted, for every result seen, filtered or not. */
+  postDates: Map<string, string>;
   /** Course codes we could neither fetch nor serve from cache. */
   failedCodes: string[];
   /** Set when Reddit asked us to stop, so the run ended early on purpose. */
@@ -145,6 +194,7 @@ export async function searchCourseReports(
   await mkdir(cacheDir, { recursive: true });
 
   const reports: ScrapedReport[] = [];
+  const postDates = new Map<string, string>();
   const failedCodes: string[] = [];
   let rateLimited = false;
 
@@ -183,7 +233,10 @@ export async function searchCourseReports(
     }
 
     reports.push(...parseSearchResultsHtml(html, code, maxPerCourse));
+    for (const [url, date] of parsePostDates(html)) {
+      if (!postDates.has(url)) postDates.set(url, date);
+    }
   }
 
-  return { reports, failedCodes, rateLimited };
+  return { reports, postDates, failedCodes, rateLimited };
 }

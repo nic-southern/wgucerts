@@ -277,6 +277,16 @@ describe("matchProgram", () => {
     expect(byCode.get("D322")?.time).toBeNull();
   });
 
+  it("keeps a course's reports after it is marked done", () => {
+    // Finishing a course drops it from the estimate but not from the record of
+    // where its time came from.
+    const profile = makeProfile({ completedCourseIds: ["course:d315"] });
+    const result = matchProgram(catalog, profile, "program:bs-it");
+    const row = result.courses.find((c) => c.course.code === "D315");
+    expect(row?.cleared).toBe(true);
+    expect(row?.time?.reports.length).toBeGreaterThan(0);
+  });
+
   it("counts time skipped by a certificate", () => {
     const profile = makeProfile({
       certificateIds: ["cert:comptia:network-plus"],

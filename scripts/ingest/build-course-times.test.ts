@@ -109,6 +109,67 @@ describe("buildCourseTimes", () => {
     expect(time.reports[0].title).toBe("D335 passed in 30 days");
   });
 
+  it("dates a curated row from the search listings", () => {
+    // Curated rows carry a link and no date, so the date comes from the listing
+    // that mentions the post — which costs no extra request.
+    const url = post("D288", "i_passed_d288_backend_programming_tips");
+    const seeds: CourseTimeSeed[] = [
+      { code: "D288", name: "Back-End Programming", url },
+    ];
+    const dates = new Map([[url, "2026-04-08"]]);
+    const [time] = buildCourseTimes(courses, seeds, [], dates).courseTimes;
+    expect(time.reports[0].postedAt).toBe("2026-04-08");
+  });
+
+  it("keeps the date a report arrived with", () => {
+    const url = post("D335", "d335_passed");
+    const scraped: ScrapedReport[] = [
+      { code: "D335", url, title: "D335 in 6 days", days: 6, postedAt: "2026-05-30" },
+    ];
+    const dates = new Map([[url, "1999-01-01"]]);
+    const [time] = buildCourseTimes(courses, [], scraped, dates).courseTimes;
+    expect(time.reports[0].postedAt).toBe("2026-05-30");
+  });
+
+  it("lists the newest reports first, and undated ones last", () => {
+    // Only the first few reach the page, and a course rewritten last year makes
+    // an account from 2019 the least useful one to show.
+    const scraped: ScrapedReport[] = [
+      { code: "D335", url: post("D335", "old"), title: "old", days: 3, postedAt: "2019-02-01" },
+      { code: "D335", url: post("D335", "new"), title: "new", days: 9, postedAt: "2026-05-30" },
+      { code: "D335", url: post("D335", "mid"), title: "mid", days: 5, postedAt: "2023-07-14" },
+      { code: "D335", url: post("D335", "undated"), title: "undated", days: 4 },
+    ];
+    const [time] = buildCourseTimes(courses, [], scraped).courseTimes;
+    expect(time.reports.map((r) => r.title)).toEqual(["new", "mid", "old", "undated"]);
+  });
+
+  it("orders curated rows by their listing date too", () => {
+    // Curated rows have no date of their own, so ordering has to wait for the
+    // listing date rather than fall back to comparing URLs.
+    const older = post("D335", "older_post");
+    const newer = post("D335", "newer_post");
+    const seeds: CourseTimeSeed[] = [
+      { code: "D335", name: "Introduction to Programming in Python", days: 2, url: older },
+      { code: "D335", name: "Introduction to Programming in Python", days: 2, url: newer },
+    ];
+    const dates = new Map([
+      [older, "2026-04-08"],
+      [newer, "2026-05-08"],
+    ]);
+    const [time] = buildCourseTimes(courses, seeds, [], dates).courseTimes;
+    expect(time.reports.map((r) => r.postedAt)).toEqual(["2026-05-08", "2026-04-08"]);
+  });
+
+  it("lists a report with a number ahead of one without", () => {
+    const scraped: ScrapedReport[] = [
+      { code: "D335", url: post("D335", "read"), title: "read", postedAt: "2026-06-01" },
+      { code: "D335", url: post("D335", "days"), title: "days", days: 5, postedAt: "2020-01-01" },
+    ];
+    const [time] = buildCourseTimes(courses, [], scraped).courseTimes;
+    expect(time.reports.map((r) => r.title)).toEqual(["days", "read"]);
+  });
+
   it("counts a crossposted report once", () => {
     // Same post in two subreddits: two URLs, one student, one data point.
     const scraped: ScrapedReport[] = [

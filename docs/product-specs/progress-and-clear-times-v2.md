@@ -68,6 +68,8 @@ Anything not matching a known phrasing is **not** guessed. It is counted as no d
 
 Per course, the catalog stores the report count, the median day count, the lowest and highest reported, and the source posts. The median is used rather than the mean because self-reported times are heavily right-skewed by a few very long reports.
 
+Each source post carries the month it was posted, and reports are listed newest first. Courses get rewritten and assessments get replaced, so recency is part of judging whether an account still applies. A post with no date available shows none.
+
 ### Known data hazards
 
 - **Self-selection.** People post when they pass fast. These numbers skew optimistic and the copy must not imply a typical pace.
@@ -81,6 +83,7 @@ This section governs the copy, and it matters more here than anywhere else in th
 
 - Times are labelled as reported by other students, with the report count visible and the source post linked.
 - A course with no reports reads as having no reports yet. It never reads as zero days.
+- Marking a course complete hides none of its reports. The accounts are the only record of where its time came from, and a finished course still has a completed neighbour who wrote about it. A completed course with no reports says nothing rather than reading as a gap.
 - The summed estimate always states how many remaining courses have no reports, so it cannot be mistaken for a complete total.
 - No graduation date, no "you will finish in", no implied guarantee of pace.
 - v1's framing still holds: unofficial planning aid, WGU enrollment evaluation is authoritative.

@@ -239,7 +239,12 @@ async function main() {
   // Times are best-effort. Set INGEST_SKIP_REDDIT=1 to build from the curated
   // table alone, which is what a blocked or throttled run falls back to anyway.
   const skipReddit = process.env.INGEST_SKIP_REDDIT === "1";
-  let search: SearchOutcome = { reports: [], failedCodes: [], rateLimited: false };
+  let search: SearchOutcome = {
+    reports: [],
+    postDates: new Map(),
+    failedCodes: [],
+    rateLimited: false,
+  };
   if (skipReddit) {
     console.log("Skipping community clear-time search (INGEST_SKIP_REDDIT=1)");
   } else {
@@ -260,6 +265,7 @@ async function main() {
     courses,
     CURATED_COURSE_TIMES,
     search.reports,
+    search.postDates,
   );
 
   const catalog = catalogSchema.parse({
@@ -336,7 +342,12 @@ async function main() {
  * matching the catalog would otherwise just vanish from the site.
  */
 function reportCourseTimes(
-  courseTimes: { courseId: string; reportCount: number; medianDays?: number }[],
+  courseTimes: {
+    courseId: string;
+    reportCount: number;
+    medianDays?: number;
+    reports: { postedAt?: string }[];
+  }[],
   courses: { id: string; code: string }[],
   warnings: CourseTimeWarning[],
   search: SearchOutcome,
@@ -353,6 +364,10 @@ function reportCourseTimes(
   if (linkOnly > 0) {
     console.log(`  ${linkOnly} courses have a linked report but no stated time`);
   }
+
+  const links = courseTimes.flatMap((t) => t.reports);
+  const dated = links.filter((r) => r.postedAt).length;
+  console.log(`  ${dated}/${links.length} linked reports carry a date`);
 
   if (search.rateLimited) {
     console.log("  ! search stopped early on a rate limit; times may be thin");

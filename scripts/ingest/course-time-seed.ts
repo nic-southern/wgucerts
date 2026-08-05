@@ -7,8 +7,13 @@
  * names across codes and the reported times differ sharply between them.
  *
  * `days` is elapsed calendar days as the poster described them, rounded up to a
- * whole day. Omit `days` when the post is worth reading but never states how
- * long it took — it then counts as a linked report with no number.
+ * whole day, and may come from a comment rather than the post itself. Omit
+ * `days` when the post is worth reading but never states how long it took — it
+ * then counts as a linked report with no number. One thread may appear under
+ * several courses when it covers several, as the new-BSIT thread does.
+ *
+ * Rows carry no date. Ingest dates them from the search listings it already
+ * holds, so a row only needs the link.
  *
  * Three rows from the original table are deliberately absent. The D683 and D459
  * entries cited posts about C683 and D335 respectively, so their times belonged
@@ -62,6 +67,7 @@ export const CURATED_COURSE_TIMES: CourseTimeSeed[] = [
   { code: "C950", name: "Data Structures and Algorithms II", days: 6, url: "https://www.reddit.com/r/WGU_CompSci/comments/1bdf53t/c950_data_structures_and_algorithms_ii_finished/" },
   { code: "D497", name: "Data Wrangling", days: 7, url: "https://www.reddit.com/r/WGU/comments/1jobype/d497_udacity_data_wrangling/" },
   { code: "D428", name: "Design Thinking for Business", days: 2, url: "https://www.reddit.com/r/WGU/comments/17b52cq/d428_design_thinking_for_business_review/" },
+  { code: "E006", name: "Digital Transformation in the Enterprise", url: "https://www.reddit.com/r/WGUIT/comments/1sfvfss/anyone_have_insight_to_the_new_bsit_courses/" },
   { code: "D416", name: "DevNet Fundamentals", days: 84, url: "https://www.reddit.com/r/WGU/comments/1s6i578/d416_cisco_devnet_fundamentals/" },
   { code: "D829", name: "Digital Forensics in Cybersecurity", days: 1, url: "https://www.reddit.com/r/WGU/comments/1px7nhw/how_i_passed_d829_digital_forensics_in/" },
   { code: "D422", name: "Discrete Math: Algorithms and Cryptography", days: 7, url: "https://www.reddit.com/r/WGU/comments/17tdlek/d422_passed_what_to_expect/" },
@@ -76,6 +82,9 @@ export const CURATED_COURSE_TIMES: CourseTimeSeed[] = [
   { code: "D827", name: "Fundamentals of Information Security", days: 1, url: "https://www.reddit.com/r/WGU/comments/1pzlglm/d827_advice/" },
   { code: "D388", name: "Fundamentals of Spreadsheets and Data Presentations", days: 4, url: "https://www.reddit.com/r/WGU/comments/1kw8mhm/how_i_passed_d388_fundamentals_of_spreadsheets/" },
   { code: "D198", name: "Global Arts and Humanities", days: 1, url: "https://www.reddit.com/r/WGU/comments/wmswk5/global_arts_and_humanities_d198/" },
+  { code: "E007", name: "Agile Methodology", url: "https://www.reddit.com/r/WGUIT/comments/1sfvfss/anyone_have_insight_to_the_new_bsit_courses/" },
+  { code: "E005", name: "Business Productivity Software", days: 2, url: "https://www.reddit.com/r/WGUIT/comments/1sfvfss/anyone_have_insight_to_the_new_bsit_courses/" },
+  { code: "E005", name: "Business Productivity Software", days: 2, url: "https://www.reddit.com/r/WGUIT/comments/1t7jbrk/business_productivity_software_e005/" },
   { code: "D386", name: "Hardware & Operating Systems Essentials", days: 7, url: "https://www.reddit.com/r/WGU/comments/1sqt4gz/passed_d386_first_try/" },
   { code: "C458", name: "Health, Fitness, and Wellness", days: 1, url: "https://www.reddit.com/r/WGU/comments/1iz3gv0/health_fitness_and_wellness_c458_passed_tips_guide/" },
   { code: "E028", name: "Hybrid Cloud Infrastructure and Orchestration", url: "https://www.reddit.com/r/WGU/comments/1rsdidy/e028_difficulty/" },
@@ -132,6 +141,8 @@ export const CURATED_COURSE_TIMES: CourseTimeSeed[] = [
   { code: "D339", name: "Technical Communication", days: 5, url: "https://www.reddit.com/r/WGU/comments/11qc56n/d339technical_communication/" },
   { code: "D773", name: "Technology and Ethics: Emerging Trends and Society", days: 2, url: "https://www.reddit.com/r/WGU/comments/1l7fteu/d773_technology_and_ethics_for_the_education/" },
   { code: "D413", name: "Telecomm and Wireless Communications", days: 14, url: "https://www.reddit.com/r/WGU/comments/1ner75n/d413_passed_in_2_weeks/" },
+  { code: "E008", name: "Technology Management", url: "https://www.reddit.com/r/WGUIT/comments/1sfvfss/anyone_have_insight_to_the_new_bsit_courses/" },
+  { code: "D267", name: "US History: Stories of American Democracy", days: 3, url: "https://www.reddit.com/r/WGU/comments/1t04f4e/how_to_pass_d267/" },
   { code: "D479", name: "User Experience Design", days: 2, url: "https://www.reddit.com/r/wgu_devs/comments/1riyuwn/user_experience_design_d479_confused_by_feedback/" },
   { code: "D279", name: "User Interface Design", days: 1, url: "https://www.reddit.com/r/WGU/comments/1707pvp/passed_user_interface_design_d279/" },
   { code: "D197", name: "Version Control", days: 3, url: "https://www.reddit.com/r/WGU/comments/1c3hdel/passed_d197_first_attempt/" },

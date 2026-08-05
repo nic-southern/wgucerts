@@ -98,6 +98,15 @@ export const courseTimeReportSchema = z.object({
   title: z.string().min(1),
   /** Absent when the post is worth reading but never states a duration. */
   days: z.number().positive().optional(),
+  /**
+   * Day the report was posted, `YYYY-MM-DD`. Absent when the listing that
+   * turned it up no longer carries it. Courses change, so a reader needs to
+   * know whether an account is from this year or five years ago.
+   */
+  postedAt: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/)
+    .optional(),
 });
 
 /**

@@ -1,13 +1,22 @@
 import { describe, expect, it } from "vitest";
-import { parseSearchResultsHtml, searchUrl } from "./reddit-search";
+import {
+  parsePostDates,
+  parseSearchResultsHtml,
+  searchUrl,
+} from "./reddit-search";
 
-/** Markup shape and titles copied from a live search for D335. */
-const result = (slug: string, title: string) => `
-<div class="search-result search-result-link">
+/**
+ * Markup shape and titles copied from a live search for D335. Results are flat
+ * siblings on the page: the meta block follows the header rather than sharing a
+ * wrapper with it.
+ */
+const result = (slug: string, title: string, submitted = "2026-06-02T22:40:46+00:00") => `
   <header class="search-result-header">
     <a href="https://old.reddit.com/r/WGU/comments/${slug}/" class="search-title may-blank" >${title}</a>
   </header>
-</div>`;
+  <div class="search-result-meta">
+    <span class="search-time">submitted&#32;<time datetime="${submitted}">1 month ago</time></span>
+  </div>`;
 
 const page = (...results: string[]) =>
   `<div class="search-result-group">${results.join("")}</div>`;
@@ -36,8 +45,28 @@ describe("parseSearchResultsHtml", () => {
         title:
           "I passed D335 - Introduction to Programming in Python in 18 days. Here's how I did it.",
         days: 18,
+        postedAt: "2026-06-02",
       },
     ]);
+  });
+
+  it("dates each report by the day it was submitted", () => {
+    const html = page(
+      result("a", "Passed D335 in 3 days", "2019-01-07T04:00:00+00:00"),
+      result("b", "Passed D335 in 4 days", "2026-05-30T12:30:00+00:00"),
+    );
+    expect(parseSearchResultsHtml(html, "D335").map((r) => r.postedAt)).toEqual([
+      "2019-01-07",
+      "2026-05-30",
+    ]);
+  });
+
+  it("leaves the date off when the listing has none", () => {
+    const html = page(`
+      <header class="search-result-header">
+        <a href="https://old.reddit.com/r/WGU/comments/x9/" class="search-title">Passed D335 in 3 days</a>
+      </header>`);
+    expect(parseSearchResultsHtml(html, "D335")[0].postedAt).toBeUndefined();
   });
 
   it("drops results that state no duration", () => {
@@ -115,5 +144,32 @@ describe("parseSearchResultsHtml", () => {
     );
     expect(parseSearchResultsHtml(html, "D335")).toHaveLength(3);
     expect(parseSearchResultsHtml(html, "D335", 2)).toHaveLength(2);
+  });
+});
+
+describe("parsePostDates", () => {
+  it("dates posts the report filters throw away", () => {
+    // The curated table cites posts like these, whose titles state no duration.
+    const html = page(
+      result("x1", "How to pass D267", "2026-04-30T18:18:53+00:00"),
+      result("x2", "Anyone have insight to the new BSIT courses?", "2026-04-08T15:03:48+00:00"),
+    );
+    expect(parseSearchResultsHtml(html, "D267")).toEqual([]);
+    expect(parsePostDates(html)).toEqual(
+      new Map([
+        ["https://www.reddit.com/r/WGU/comments/x1/", "2026-04-30"],
+        ["https://www.reddit.com/r/WGU/comments/x2/", "2026-04-08"],
+      ]),
+    );
+  });
+
+  it("skips anything that is not a dated post link", () => {
+    const html = page(
+      `<a href="https://example.com/x" class="search-title">Offsite</a>`,
+      result("x3", "Passed D335"),
+    );
+    expect(parsePostDates(html)).toEqual(
+      new Map([["https://www.reddit.com/r/WGU/comments/x3/", "2026-06-02"]]),
+    );
   });
 });

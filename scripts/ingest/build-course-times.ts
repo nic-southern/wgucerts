@@ -14,6 +14,8 @@ export type ScrapedReport = {
   url: string;
   title: string;
   days?: number;
+  /** Day posted, `YYYY-MM-DD`. */
+  postedAt?: string;
 };
 
 export type CourseTimeWarning =
@@ -60,11 +62,15 @@ function median(values: number[]): number {
  *
  * Curated rows win on conflict: a human read the post and decided the number.
  * Reports are deduplicated by URL so the same post found twice counts once.
+ *
+ * `postDates` dates the curated rows, which carry a link but no date of their
+ * own.
  */
 export function buildCourseTimes(
   courses: CourseRef[],
   seeds: CourseTimeSeed[],
   scraped: ScrapedReport[],
+  postDates: Map<string, string> = new Map(),
 ): BuildCourseTimesResult {
   const warnings: CourseTimeWarning[] = [];
   const courseByCode = new Map(courses.map((c) => [c.code, c]));
@@ -99,6 +105,7 @@ export function buildCourseTimes(
         titleIsDerived: takeTitle ? false : existing.titleIsDerived,
         days: takeDays ? (incoming.days ?? existing.days) : existing.days,
         daysAreCurated: existing.daysAreCurated || incoming.daysAreCurated,
+        postedAt: existing.postedAt ?? incoming.postedAt,
       });
     }
     byCourse.set(courseId, reports);
@@ -151,6 +158,7 @@ export function buildCourseTimes(
       titleIsDerived: false,
       days: report.days,
       daysAreCurated: false,
+      postedAt: report.postedAt,
     });
   }
 
@@ -169,13 +177,26 @@ export function buildCourseTimes(
       }
     }
 
+    // Date first, then sort: a curated row has no date of its own, so ordering
+    // it before the listing date is filled in would ignore the date entirely.
     const list: CourseTimeReport[] = [...byTitle.values()]
+      .map((report) => ({
+        ...report,
+        postedAt: report.postedAt ?? postDates.get(report.url),
+      }))
       .sort((a, b) => {
-        // Reports with a number first, then longest-running for stable output.
-        if ((a.days ?? 0) !== (b.days ?? 0)) return (b.days ?? 0) - (a.days ?? 0);
+        // A number is the useful part, so numbered reports lead. Within those,
+        // newest first: courses get rewritten, and the UI only shows the first
+        // few. Undated reports sort last, and the URL keeps output stable.
+        const aHasDays = typeof a.days === "number";
+        const bHasDays = typeof b.days === "number";
+        if (aHasDays !== bHasDays) return aHasDays ? -1 : 1;
+        const aDate = a.postedAt ?? "";
+        const bDate = b.postedAt ?? "";
+        if (aDate !== bDate) return bDate.localeCompare(aDate);
         return a.url.localeCompare(b.url);
       })
-      .map(({ url, title, days }) => ({ url, title, days }));
+      .map(({ url, title, days, postedAt }) => ({ url, title, days, postedAt }));
     const days = list
       .map((r) => r.days)
       .filter((d): d is number => typeof d === "number");

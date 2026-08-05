@@ -606,37 +606,36 @@ a:hover {
 .time-note {
   margin: 0.3rem 0 0;
   font-size: 0.88rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.35rem;
+}
+
+.time-note p {
+  margin: 0;
 }
 
 .time-note--empty {
   color: var(--ink-soft);
 }
 
-.time-note__links {
-  display: inline-flex;
+/* Each day count stays glued to its date; pairs wrap as a group. */
+.time-note__reports {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  display: flex;
   flex-wrap: wrap;
-  gap: 0.15rem 0.5rem;
+  gap: 0.1rem 1rem;
+  font-size: 0.82rem;
 }
 
-.time-note__links a,
+.time-note__reports li {
+  white-space: nowrap;
+}
+
 .time-note a {
   font-size: 0.82rem;
   color: var(--accent-deep);
   text-decoration: underline;
   text-underline-offset: 0.15em;
-}
-
-/* Separate one source from the next so the numbers do not read as prose. */
-.time-note__links a + a::before {
-  content: "·";
-  margin-right: 0.5rem;
-  color: var(--ink-soft);
-  text-decoration: none;
-  display: inline-block;
 }
 
 .transfer-group + .transfer-group {
