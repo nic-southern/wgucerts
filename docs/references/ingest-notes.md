@@ -96,5 +96,7 @@ under all four — three of them as a link with no number.
 
 - Schedule ingest via GitHub Actions (weekly) with a PR or commit of refreshed `data/catalog/catalog.json`.
 - Use the published per-program course lists for prior associate degrees in place of the
-  category-based `degreeRules`. WGU publishes no equivalent list for a prior bachelor's.
+  category-based `degreeRules` (today those rules clear gen-ed categories but
+  `excludesCourseIds` skips courses WGU marks as not degree-satisfiable, e.g. D333).
+  WGU publishes no equivalent list for a prior bachelor's.
 - Add Sophia / Study.com packs using the same catalog shapes.

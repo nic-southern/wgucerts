@@ -128,6 +128,11 @@ export const courseTimeSchema = z.object({
 export const degreeRuleSchema = z.object({
   kind: degreeKindSchema,
   clearsCategories: z.array(courseCategorySchema),
+  /**
+   * Courses in those categories a prior degree does not satisfy (e.g. gen-ed
+   * ethics that WGU marks "cannot be satisfied by an associate or bachelor’s").
+   */
+  excludesCourseIds: z.array(z.string()).default([]),
   notes: z.string(),
 });
 

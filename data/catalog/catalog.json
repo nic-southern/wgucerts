@@ -10715,7 +10715,10 @@
       "clearsCategories": [
         "genEd"
       ],
-      "notes": "An accredited associate degree typically satisfies liberal arts general education / foundations coursework (except nursing). Confirm with WGU."
+      "excludesCourseIds": [
+        "course:d333"
+      ],
+      "notes": "An accredited associate degree typically satisfies liberal arts general education / foundations coursework (except nursing and courses WGU marks as not degree-satisfiable, e.g. Ethics in Technology). Confirm with WGU."
     },
     {
       "kind": "associates_it",
@@ -10723,14 +10726,20 @@
         "genEd",
         "foundations"
       ],
-      "notes": "An IT-related associate degree may satisfy gen-ed plus IT foundations courses (often within 5 years). Confirm with WGU."
+      "excludesCourseIds": [
+        "course:d333"
+      ],
+      "notes": "An IT-related associate degree may satisfy gen-ed plus IT foundations courses (often within 5 years), excluding courses WGU marks as not degree-satisfiable. Confirm with WGU."
     },
     {
       "kind": "bachelors",
       "clearsCategories": [
         "genEd"
       ],
-      "notes": "A prior bachelor’s degree typically satisfies general education requirements. Confirm with WGU."
+      "excludesCourseIds": [
+        "course:d333"
+      ],
+      "notes": "A prior bachelor’s degree typically satisfies general education requirements, excluding courses WGU marks as not degree-satisfiable (e.g. Ethics in Technology). Confirm with WGU."
     }
   ]
 }

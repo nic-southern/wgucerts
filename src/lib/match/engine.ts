@@ -110,7 +110,9 @@ export function matchProgram(
     if (rule) {
       degreeNotes = rule.notes;
       const categories = new Set<CourseCategory>(rule.clearsCategories);
+      const excluded = new Set(rule.excludesCourseIds);
       for (const course of courses) {
+        if (excluded.has(course.id)) continue;
         if (categories.has(course.category)) {
           const reasons = clearedByCourse.get(course.id) ?? [];
           reasons.push({

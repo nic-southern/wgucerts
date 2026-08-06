@@ -127,16 +127,19 @@ const catalog: Catalog = {
     {
       kind: "associates",
       clearsCategories: ["genEd"],
+      excludesCourseIds: [],
       notes: "Associates clears gen ed",
     },
     {
       kind: "associates_it",
       clearsCategories: ["genEd", "foundations"],
+      excludesCourseIds: [],
       notes: "IT associates clears foundations",
     },
     {
       kind: "bachelors",
       clearsCategories: ["genEd"],
+      excludesCourseIds: [],
       notes: "Bachelors clears gen ed",
     },
   ],
@@ -160,6 +163,40 @@ describe("matchProgram", () => {
     const composition = result.courses.find((c) => c.course.code === "D269");
     expect(composition?.cleared).toBe(true);
     expect(result.clearedCount).toBe(1);
+  });
+
+  it("does not clear gen-ed courses excluded from the degree rule", () => {
+    const withEthics: Catalog = {
+      ...catalog,
+      programs: [
+        {
+          ...catalog.programs[0]!,
+          courseIds: [...catalog.programs[0]!.courseIds, "course:d333"],
+        },
+      ],
+      courses: [
+        ...catalog.courses,
+        {
+          id: "course:d333",
+          code: "D333",
+          name: "Ethics in Technology",
+          cu: 3,
+          category: "genEd",
+          programIds: ["program:bs-it"],
+        },
+      ],
+      degreeRules: catalog.degreeRules.map((rule) =>
+        rule.clearsCategories.includes("genEd")
+          ? { ...rule, excludesCourseIds: ["course:d333"] }
+          : rule,
+      ),
+    };
+    const profile = makeProfile({ priorDegree: "associates" });
+    const result = matchProgram(withEthics, profile, "program:bs-it");
+    const ethics = result.courses.find((c) => c.course.code === "D333");
+    const composition = result.courses.find((c) => c.course.code === "D269");
+    expect(composition?.cleared).toBe(true);
+    expect(ethics?.cleared).toBe(false);
   });
 
   it("clears foundations from associates IT and cert course", () => {

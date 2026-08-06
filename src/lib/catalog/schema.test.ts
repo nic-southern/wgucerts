@@ -11,5 +11,10 @@ describe("catalog snapshot", () => {
       "associates_it",
       "bachelors",
     ]);
+    expect(
+      catalog.degreeRules.every((r) =>
+        r.excludesCourseIds.includes("course:d333"),
+      ),
+    ).toBe(true);
   });
 });
